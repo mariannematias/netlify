@@ -116,6 +116,9 @@ header {
     color: rgba(255,255,255,.9);
     margin-bottom: 14rem;
 }
+.banner-section {
+    padding-bottom: 8rem;
+}
 .banner-section .announcement {
     background: #0e1e25;
     border-radius: 4px;
@@ -131,7 +134,7 @@ header {
     text-decoration: underline;
 }
 .banner-title {
-    margin-top: .6em;
+    margin-top: 1.5em;
     max-width: 13em;
     font-size: 2.6em;
     font-weight: bold;
@@ -158,7 +161,7 @@ header {
     font-weight: 600;
 }
 .banner-img {
-    background-image: url(../images/bg.svg);
+    background-image: url(../images/laptop.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: scroll;
@@ -182,6 +185,9 @@ header {
 .footnote-link {
     color: currentColor;
     opacity: .5;
+}
+.step h3 {
+    margin-bottom: 2rem;
 }
 .step h3,
 .static-list h3,
@@ -214,7 +220,9 @@ header {
     content: '3';
 }
 .step img {
-    width: 75%;
+    width: 55%;
+    display: block;
+    margin: auto;
 }
 .subtitle {
     font-size: 1rem;
@@ -257,6 +265,12 @@ header {
 .deploy-list p {
     color: #ffffffe6;
     font-size: 1rem;
+}
+.deploy-list p img {
+    width: 45%;
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
 }
 .gradient a {
     color: #fff;
@@ -402,4 +416,35 @@ footer .banner-btn {
 .copyright {
     color: #0e1e2561;
     font-size: .9rem;
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .banner-img {
+        height: 565px;
+    }
+    .head-section {
+        margin-bottom: 4rem;
+    }
+    .client-list .client-box {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-title {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .static-list p img {
+        width: 65%;
+        display: block;
+        margin: auto;
+    }
+    .clients .client-logo img {
+        width: 100%;
+    }
 }

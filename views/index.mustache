@@ -25,11 +25,8 @@
                     </button>
                     <a class="navbar-brand" href="/">
                         <img class="logo" src="images/dummy-logo.png" class="d-inline-block align-top" alt="">
-                        <span>Netlify</span>
+                        <span>{{page.name}}</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarSearch" aria-controls="navBarSearch" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="toggle fas fa-search"></i>
-                    </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link active" href="#">Products</a>
@@ -49,12 +46,9 @@
         </header>
         <section class="banner-section">
             <div class="container">
-                <p class="announcement"><strong>Introducing: Netlify Dev.</strong>
-                    Run our entire platform right on your laptop.
-                    <a ref="#">Learn more</a> →</p>
                 <h1 class="banner-title">Build, deploy, and manage modern web projects</h1>
                 <p class="banner-sub">An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.</p>
-                <p class="banner-btn"><button class="btn get-started"><span>Get Started for free</span></button></p>
+                <p class="banner-btn"><button class="btn get-started"><span>Join now for free</span></button></p>
             </div>
         </section>
         <div class="banner-img"></div>
@@ -66,20 +60,20 @@
                 <h2 class="section-title align-center">Deploy your site in seconds<a class="footnote-link" href="#footnote-core">*</a></h2>
                 <div class="row">
                     <div class="col-md-4 col-sm-12 step step-1">
-                        <h3>Connect your repository</h3>
-                        <p><img src="images/repository.png"></p>
+                        <h3 class="align-center">Connect your repository</h3>
+                        <p><img src="images/deploy2.png"></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-2">
-                        <h3>Add your build settings</h3>
-                        <p><img src="images/build.png"></p>
+                        <h3 class="align-center">Add your build settings</h3>
+                        <p><img src="images/deploy3.png"></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-3">
-                        <h3>Deploy your website</h3>
-                        <p><img src="images/deploy.png"></p>
+                        <h3 class="align-center">Deploy your website</h3>
+                        <p><img src="images/deploy1.png"></p>
                     </div>
                 </div>
                 <p class="subtitle align-center">*Nope, no gotcha here.<br>It just takes a few clicks.</p>
-                <p class="banner-btn align-center"><button class="btn get-started"><span>Get Started for free</span></button></p>
+                <p class="banner-btn align-center"><button class="btn get-started"><span>Join now for free</span></button></p>
             </div>
         </section>
 
@@ -87,28 +81,28 @@
             <div class="container">
                 <h2 class="section-title align-center">Go beyond static</h2>
                 <div class="row static-list">
-                    <div class="col-md-3 md-order-2 col-sm-12">
+                    <div class="col-md-3 order-md-1 col-sm-12">
                         <p><img src="images/img1.jpg"></p>
                     </div>
-                    <div class="col-md-9 md-order-1 col-sm-12 desc">
+                    <div class="col-md-9 order-md-2 col-sm-12 desc">
                         <h3>Nail the fundamentals with rock-solid deployment</h3>
                         <p>Deploy to a redundant network of servers with built‑in continuous integration and HTTPS.</p>
                     </div>
                 </div>
                 <div class="row static-list">
-                    <div class="col-md-9 md-order-2 col-sm-12 desc">
+                    <div class="col-md-3 order-md-2 col-sm-12">
+                        <p><img src="images/img3.jpg"></p>
+                    </div>
+                    <div class="col-md-9 order-md-1 col-sm-12 desc">
                         <h3>Add dynamic functionality with built‑in applications</h3>
                         <p>Manage user identity, HTML forms, and even AWS Lambda functions with ease.</p>
                     </div>
-                    <div class="col-md-3 md-order-1 col-sm-12">
-                        <p><img src="images/img3.jpg"></p>
-                    </div>
                 </div>
                 <div class="row static-list">
-                    <div class="col-md-3 md-order-2 col-sm-12">
+                    <div class="col-md-3 order-md-1 col-sm-12">
                         <p><img src="images/img2.jpg"></p>
                     </div>
-                    <div class="col-md-9 md-order-1 col-sm-12 desc">
+                    <div class="col-md-9 order-md-2 col-sm-12 desc">
                         <h3>Customize your projects with your own build tools or microservices</h3>
                         <p>Use your favorite tools for search, payments, commenting, or content management.</p>
                     </div>
@@ -121,19 +115,22 @@
                 <h2 class="section-title align-center">There’s a better way to deploy web projects</h2>
                 <div class="row">
                     <div class="col-md-4 col-sm-12 deploy-list">
+                        <p><img src="images/deploy4.png"></p>
                         <h3>A single, simplified workflow</h3>
                         <p>Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow.</p>
                     </div>
                     <div class="col-md-4 col-sm-12 deploy-list">
+                        <p><img src="images/deploy6.png"></p>
                         <h3>Performance from the ground up</h3>
                         <p>Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure.</p>
                     </div>
                     <div class="col-md-4 col-sm-12 deploy-list">
+                        <p><img src="images/deploy5.png"></p>
                         <h3>Don’t stop at static</h3>
                         <p>Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own.</p>
                     </div>
                 </div>
-                <p class="banner-btn align-center"><button class="btn get-started"><span>Get Started for free</span></button></p>
+                <p class="banner-btn align-center"><button class="btn get-started"><span>Join now for free</span></button></p>
                 <p class="align-center"><a href="#"><strong>See plans and pricing</a></strong> →</p>
             </div>
         </section>
@@ -188,7 +185,7 @@
         <div class="container align-center">
             <h2><strong>Ready to try Netlify?</strong></h2>
             <p class="footer-sub">Deploy a site in 30 seconds.</p>
-            <p class="banner-btn align-center"><button class="btn get-started"><span>Get Started for free</span></button></p>
+            <p class="banner-btn align-center"><button class="btn get-started"><span>Join now for free</span></button></p>
 
             <div class="footer-links">
                 <p class="align-center footer-logo"><img class="logo" src="images/dummy-logo.png"></p>
