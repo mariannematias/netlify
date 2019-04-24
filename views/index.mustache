@@ -29,10 +29,9 @@
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="#">Products</a>
-                            <a class="nav-item nav-link" href="#">Pricing</a>
-                            <a class="nav-item nav-link" href="#">Docs</a>
-                            <a class="nav-item nav-link" href="#">Blog</a>
+                            {{#page.head-nav}}
+                                <a class="nav-item nav-link active" href="#">{{text}}</a>
+                            {{/page.head-nav}}
                             <a class="nav-item nav-link nav-search" href="#"><i class="fas fa-search"></i></a>
                         </div>
                         <form class="form-inline">
@@ -123,7 +122,7 @@
                         <p>{{page.section-3.lists.list1.subtitle}}</p>
                     </div>
                     <div class="col-md-4 col-sm-12 deploy-list">
-                        <p><img src="{{page.section-3.lists.list2.img}}"></p>
+                        <p><img style="width: 57%;" src="{{page.section-3.lists.list2.img}}"></p>
                         <h3>{{page.section-3.lists.list2.title}}</h3>
                         <p>{{page.section-3.lists.list2.subtitle}}</p>
                     </div>
@@ -194,22 +193,19 @@
                 <p class="align-center footer-logo"><img class="logo" src="{{page.logo}}"></p>
                 <div class="footer-nav">
                     <ul class="nav-list">
-                        <li><a href="#">{{page.footer.footer-links.link1[0].text}}</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Docs</a></li>
-                        <li><a href="#">Blog</a></li>
+                        {{#page.footer.footer-links.link1}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link1}}
                     </ul>
                     <ul class="nav-list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Open Source</a></li>
+                        {{#page.footer.footer-links.link2}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link2}}
                     </ul>
                     <ul class="nav-list">
-                        <li><a href="#">Sales</a></li>
-                        <li><a href="#">Status</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Community</a></li>
+                        {{#page.footer.footer-links.link3}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link3}}
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -220,9 +216,9 @@
                         <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                     <ul class="links">
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">GDPR</a></li>
+                        {{#page.footer.footer-links.link4}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link4}}
                     </ul>
                     <p class="copyright">{{page.footer.copyright}}</p>
                 </div>

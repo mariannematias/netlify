@@ -54,17 +54,17 @@
     "title": "There’s a better way to deploy web projects",
     "lists": {
       "list1": {
-        "img": "images/deploy4.png",
+        "img": "images/deploy4-c.png",
         "title": "A single, simplified workflow",
         "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
       },
       "list2": {
-        "img": "images/deploy6.png",
+        "img": "images/deploy4-b.png",
         "title": "Performance from the ground up",
         "subtitle": "Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure."
       },
       "list3": {
-        "img": "images/deploy5.png",
+        "img": "images/deploy4-a.png",
         "title": "Don’t stop at static",
         "subtitle": "Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
       }
