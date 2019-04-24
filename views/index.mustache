@@ -33,8 +33,11 @@
                             <a class="nav-item nav-link" href="#">Pricing</a>
                             <a class="nav-item nav-link" href="#">Docs</a>
                             <a class="nav-item nav-link" href="#">Blog</a>
-                            <a class="nav-item nav-link" href="#"><i class="fas fa-search"></i></a>
+                            <a class="nav-item nav-link nav-search" href="#"><i class="fas fa-search"></i></a>
                         </div>
+                        <form class="form-inline">
+                            <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+                        </form>
                         <div class="ml-auto">
                             <a class="nav-sales" href="#">Contact Sales</a>
                             <a class="nav-login" href="#">Login</a>
@@ -46,47 +49,47 @@
         </header>
         <section class="banner-section">
             <div class="container">
-                <h1 class="banner-title">Build, deploy, and manage modern web projects</h1>
-                <p class="banner-sub">An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.</p>
-                <p class="banner-btn"><button class="btn get-started"><span>Join now for free</span></button></p>
+                <h1 class="banner-title">{{page.hero.title}}</h1>
+                <p class="banner-sub">{{page.hero.subtitle}}</p>
+                <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.hero.button.color}}"><span>{{page.hero.button.text}}</span></button></p>
             </div>
         </section>
-        <div class="banner-img"></div>
+        <div class="banner-img" style="background-image: url({{page.hero.hero-img}});"></div>
       </div>
 
     <main>
         <section class="deploy">
             <div class="container">
-                <h2 class="section-title align-center">Deploy your site in seconds<a class="footnote-link" href="#footnote-core">*</a></h2>
+                <h2 class="section-title align-center">{{page.section-1.title}}<a class="footnote-link" href="#footnote">*</a></h2>
                 <div class="row">
                     <div class="col-md-4 col-sm-12 step step-1">
-                        <h3 class="align-center">Connect your repository</h3>
+                        <h3 class="align-center">{{page.section-1.steps.step1.title}}</h3>
                         <p><img src="images/deploy2.png"></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-2">
-                        <h3 class="align-center">Add your build settings</h3>
+                        <h3 class="align-center">{{page.section-1.steps.step2.title}}</h3>
                         <p><img src="images/deploy3.png"></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-3">
-                        <h3 class="align-center">Deploy your website</h3>
+                        <h3 class="align-center">{{page.section-1.steps.step3.title}}</h3>
                         <p><img src="images/deploy1.png"></p>
                     </div>
                 </div>
-                <p class="subtitle align-center">*Nope, no gotcha here.<br>It just takes a few clicks.</p>
-                <p class="banner-btn align-center"><button class="btn get-started"><span>Join now for free</span></button></p>
+                <p class="subtitle align-center">{{page.section-1.subtitle}}<br>{{page.section-1.subtitle2}}</p>
+                <p class="banner-btn align-center"><button class="btn get-started"  style="background-color: {{page.hero.button.color}}"><span>{{page.hero.button.text}}</span></button></p>
             </div>
         </section>
 
         <section>
             <div class="container">
-                <h2 class="section-title align-center">Go beyond static</h2>
+                <h2 id="#footnote" class="section-title align-center">{{page.section-2.title}}</h2>
                 <div class="row static-list">
                     <div class="col-md-3 order-md-1 col-sm-12">
                         <p><img src="images/img1.jpg"></p>
                     </div>
                     <div class="col-md-9 order-md-2 col-sm-12 desc">
-                        <h3>Nail the fundamentals with rock-solid deployment</h3>
-                        <p>Deploy to a redundant network of servers with built‑in continuous integration and HTTPS.</p>
+                        <h3>{{page.section-2.lists.list1.title}}</h3>
+                        <p>{{page.section-2.lists.list1.subtitle}}</p>
                     </div>
                 </div>
                 <div class="row static-list">
@@ -94,8 +97,8 @@
                         <p><img src="images/img3.jpg"></p>
                     </div>
                     <div class="col-md-9 order-md-1 col-sm-12 desc">
-                        <h3>Add dynamic functionality with built‑in applications</h3>
-                        <p>Manage user identity, HTML forms, and even AWS Lambda functions with ease.</p>
+                        <h3>{{page.section-2.lists.list2.title}}</h3>
+                        <p>{{page.section-2.lists.list2.subtitle}}</p>
                     </div>
                 </div>
                 <div class="row static-list">
@@ -103,8 +106,8 @@
                         <p><img src="images/img2.jpg"></p>
                     </div>
                     <div class="col-md-9 order-md-2 col-sm-12 desc">
-                        <h3>Customize your projects with your own build tools or microservices</h3>
-                        <p>Use your favorite tools for search, payments, commenting, or content management.</p>
+                        <h3>{{page.section-2.lists.list3.title}}</h3>
+                        <p>{{page.section-2.lists.list3.subtitle}}</p>
                     </div>
                 </div>
             </div>
@@ -112,65 +115,65 @@
 
         <section class="gradient">
             <div class="container">
-                <h2 class="section-title align-center">There’s a better way to deploy web projects</h2>
+                <h2 class="section-title align-center">{{page.section-3.title}}</h2>
                 <div class="row">
                     <div class="col-md-4 col-sm-12 deploy-list">
                         <p><img src="images/deploy4.png"></p>
-                        <h3>A single, simplified workflow</h3>
-                        <p>Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow.</p>
+                        <h3>{{page.section-3.lists.list1.title}}</h3>
+                        <p>{{page.section-3.lists.list1.subtitle}}</p>
                     </div>
                     <div class="col-md-4 col-sm-12 deploy-list">
                         <p><img src="images/deploy6.png"></p>
-                        <h3>Performance from the ground up</h3>
-                        <p>Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure.</p>
+                        <h3>{{page.section-3.lists.list2.title}}</h3>
+                        <p>{{page.section-3.lists.list2.subtitle}}</p>
                     </div>
                     <div class="col-md-4 col-sm-12 deploy-list">
                         <p><img src="images/deploy5.png"></p>
-                        <h3>Don’t stop at static</h3>
-                        <p>Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own.</p>
+                        <h3>{{page.section-3.lists.list3.title}}</h3>
+                        <p>{{page.section-3.lists.list3.subtitle}}</p>
                     </div>
                 </div>
-                <p class="banner-btn align-center"><button class="btn get-started"><span>Join now for free</span></button></p>
-                <p class="align-center"><a href="#"><strong>See plans and pricing</a></strong> →</p>
+                <p class="banner-btn align-center"><button class="btn get-started" style="background-color: {{page.hero.button.color}}"><span>{{page.hero.button.text}}</span></button></p>
+                <p class="align-center"><a href="#"><strong>{{page.section-3.subtitle}}</a></strong> →</p>
             </div>
         </section>
 
         <section class="clients">
             <div class="container">
-                <h3 class="align-center">More than 500,000 developers trust Netlify</h3>
+                <h3 class="align-center">{{page.section-4.title}}</h3>
                 <p class="align-center client-logo"><img src="images/logos.png"></p>
             </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 client-list">
                         <div class="client-box">
-                            <p><a href="#">Vuejs.org</a> is now powered by <a href="#">@Netlify</a> with a free open source team plan. Really really impressive and smooth deployment experience.</p>
+                            <p><a href="#">{{page.section-4.clients.client1.desc-a}}</a> {{page.section-4.clients.client1.desc}} <a href="#">{{page.section-4.clients.client1.desc-a1}}</a> {{page.section-4.clients.client1.desc2}}</p>
                             <div class="author">
                                 <img src="images/2.png">
-                                <a href="#">Evan You
-                                    <small><i class="fab fa-twitter"></i>@youyuxi</small>
+                                <a href="#">{{page.section-4.clients.client1.name}}
+                                    <small><i class="fab fa-twitter"></i>{{page.section-4.clients.client1.social}}</small>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 client-list">
                         <div class="client-box">
-                            <p>Haven’t been as impressed by a software product as I am with <a href="#">@Netlify</a> in a long time. Huge time saver, works as promised. Neat stuff, folks.</p>
+                            <p>{{page.section-4.clients.client2.desc}}<a href="#">{{page.section-4.clients.client2.desc-a}}</a> {{page.section-4.clients.client2.desc2}}</p>
                             <div class="author">
                                 <img src="images/3.png">
-                                <a href="#">Chance Griffin
-                                    <small><i class="fab fa-twitter"></i>@cbgriffin</small>
+                                <a href="#">{{page.section-4.clients.client2.name}}
+                                    <small><i class="fab fa-twitter"></i>{{page.section-4.clients.client2.social}}</small>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 client-list">
                         <div class="client-box">
-                            <p>I think <a href="#">@Netlify</a> might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.</p>
+                            <p>{{page.section-4.clients.client3.desc}}<a href="#">{{page.section-4.clients.client3.desc-a}}</a> {{page.section-4.clients.client2.desc2}}</p>
                             <div class="author">
                                 <img src="images/4.png">
-                                <a href="#">Emma Barnes #FBPE
-                                    <small><i class="fab fa-twitter"></i>@has_many_books</small>
+                                <a href="#">{{page.section-4.clients.client3.name}}
+                                    <small><i class="fab fa-twitter"></i>{{page.section-4.clients.client3.social}}</small>
                                 </a>
                             </div>
                         </div>
@@ -183,9 +186,9 @@
 
     <footer>
         <div class="container align-center">
-            <h2><strong>Ready to try Netlify?</strong></h2>
-            <p class="footer-sub">Deploy a site in 30 seconds.</p>
-            <p class="banner-btn align-center"><button class="btn get-started"><span>Join now for free</span></button></p>
+            <h2><strong>{{page.footer.title}}</strong></h2>
+            <p class="footer-sub">{{page.footer.subtitle}}</p>
+            <p class="banner-btn align-center"><button class="btn get-started"><span>{{page.hero.button.text}}</span></button></p>
 
             <div class="footer-links">
                 <p class="align-center footer-logo"><img class="logo" src="images/dummy-logo.png"></p>
@@ -221,7 +224,7 @@
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">GDPR</a></li>
                     </ul>
-                    <p class="copyright">Netlify © 2019</p>
+                    <p class="copyright">{{page.footer.copyright}}</p>
                 </div>
             </div>
         </div>

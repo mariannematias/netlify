@@ -1,6 +1,95 @@
 { 
   "name": "Netlify",
   "hero": {
-    "header": ""
+    "title": "Build, deploy, and manage modern web projects",
+    "subtitle": "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.",
+    "button": {
+      "color": "#00ad9f",
+      "text": "Join now for free"
+    },
+    "hero-img": "/images/laptop.jpg"
+  },
+  "section-1": {
+    "title": "Deploy your site in seconds",
+    "steps": {
+      "step1": {
+        "title": "Connect your repository"
+      },
+      "step2": {
+        "title": "Add your build settings"
+      },
+      "step3": {
+        "title": "Deploy your website"
+      }
+    },
+    "subtitle": "*Nope, no gotcha here.",
+    "subtitle2": "It just takes a few clicks."
+  },
+  "section-2": {
+    "title": "Go beyond static",
+    "lists": {
+      "list1": {
+        "title": "Nail the fundamentals with rock-solid deployment",
+        "subtitle": "Deploy to a redundant network of servers with built‑in continuous integration and HTTPS."
+      },
+      "list2": {
+        "title": "Add dynamic functionality with built‑in applications",
+        "subtitle": "Manage user identity, HTML forms, and even AWS Lambda functions with ease."
+      },
+      "list3": {
+        "title": "Customize your projects with your own build tools or microservices",
+        "subtitle": "Use your favorite tools for search, payments, commenting, or content management."
+      }
+    }
+  },
+  "section-3": {
+    "title": "There’s a better way to deploy web projects",
+    "lists": {
+      "list1": {
+        "title": "A single, simplified workflow",
+        "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
+      },
+      "list2": {
+        "title": "Performance from the ground up",
+        "subtitle": "Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure."
+      },
+      "list3": {
+        "title": "Don’t stop at static",
+        "subtitle": "Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
+      }
+    },
+    "subtitle": "See plans and pricing"
+  },
+  "section-4": {
+    "title": "More than 500,000 developers trust Netlify",
+    "clients": {
+      "client1": {
+        "desc-a": "Vuejs.org",
+        "desc": "is now powered by ",
+        "desc-a1": "@Netlify",
+        "desc2": "with a free open source team plan. Really really impressive and smooth deployment experience.",
+        "name": "Evan You",
+        "social": "@youyuxi"
+      },
+      "client2": {
+        "desc": "Haven’t been as impressed by a software product as I am with ",
+        "desc-a": "@Netlify",
+        "desc2": "in a long time. Huge time saver, works as promised. Neat stuff, folks.",
+        "name": "Chance Griffin",
+        "social": "@cbgriffin"
+      },
+      "client3": {
+        "desc": "I think ",
+        "desc-a": "@Netlify",
+        "desc2": "might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
+        "name": "Emma Barnes #FBPE",
+        "social": "@has_many_books"
+      }
+    }
+  },
+  "footer": {
+    "title": "Ready to try Netlify?",
+    "subtitle": "Deploy a site in 30 seconds.",
+    "copyright": "Netlify © 2019"
   }
 }
