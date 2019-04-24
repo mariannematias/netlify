@@ -1,0 +1,181 @@
+{ 
+  "name": "Netlify",
+  "logo": "images/dummy-logo.png",
+  "head-nav": [{ "text": "Products", "link": "#" }, { "text": "Pricing", "link": "#" }, { "text": "Docs", "link": "#" }, { "text": "Blog", "link": "/blog" }],
+  "head-nav2": [{ "text": "Contact Sales" }, { "text": "Login" }, { "text": "Sign Up →" }],
+  "hero": {
+    "title": "Blog",
+    "subtitle": "Exploring the JAMstack, static sites, and the future of web development.",
+    "subtitle-a": "Subscribe to our newsletter",
+    "subtitle2": " to make sure you don't miss anything."
+  },
+  "all-posts": {
+    "title": "All posts",
+    "posts": [
+      {
+        "title": "Netlify Dev — our entire platform, right on your laptop",
+        "desc": "Netlify Dev is our next step on the road to making the experience of developing for the web as productive, simple, and predictable as possible.",
+        "author": {
+          "name": "Phil Hawksworth",
+          "in": "News & Announcements"
+        },
+        "date": "April 9, 2019"
+      },
+      {
+        "title": "Deploy CodeSandbox to Netlify",
+        "desc": "Announcing the CodeSandbox Netlify integration. Create and deploy sites to Netlify directly from within CodeSandbox!",
+        "author": {
+          "name": "David Wells",
+          "in": "News & Announcements"
+        },
+        "date": "March 26, 2019"
+      },
+      {
+        "title": "Featured site: Tinkersynth",
+        "desc": "Tinkersynth - In-browser generative art that you'll want to hang on your wall.",
+        "author": {
+          "name": "Phil Hawksworth",
+          "in": "Featured Sites"
+        },
+        "date": "March 19, 2019"
+      },
+      {
+        "title": "A more flexible build architecture with updated Linux",
+        "desc": "One of our primary goals at Netlify is to make deployments something you don’t have to worry about. With that in mind, we designed our process for making a site from Git so that it “just works” with very little configuration. We get daily feedback about how much people love this!",
+        "author": {
+          "name": "Bret Comnes",
+          "in": "News & Announcements"
+        },
+        "date": "March 14, 2019"
+      },
+      {
+        "title": "Featured site: Curated",
+        "desc": "Curated is a searchable index of sites about web design. With sites suggested by the community it surfaces them through an elegant and performant interface.",
+        "author": {
+          "name": "Phil Hawksworth",
+          "in": "Featured Sites"
+        },
+        "date": "March 13, 2019"
+      },
+      {
+        "title": "Deep dive: How do React hooks really work?",
+        "desc": "In this article, we reintroduce closures by building a tiny clone of React Hooks. This will serve two purposes - to demonstrate the effective use of closures in building our React Hooks clone itself, and also to implement a naive mental model of how Hooks work under the hood. Finally, we …",
+        "author": {
+          "name": "swyx",
+          "in": "Opinions & Insights"
+        },
+        "date": "March 11, 2019"
+      },
+      {
+        "title": "Software Engineering Daily - Podcast interview with Matt Biilmann",
+        "desc": "Matt Biilmann, our very own co-founder and CEO, talks to Software Engineering Daily about the reasons for and the challenges of building the Netlify infrastructure. About  evolving for scale. And about the lessons learned from a background in music.",
+        "author": {
+          "name": "Phil Hawksworth",
+          "in": "Useful links"
+        },
+        "date": "March 8, 2019"
+      },
+      {
+        "title": "The Road To Community: Part Three — Create",
+        "desc": "Part three of our series on building a world class community for Netlify. Content is the king of value — but what is the best way to efficiently create content that engages?",
+        "author": {
+          "name": "Perry Eising",
+          "in": "News & Announcements"
+        },
+        "date": "March 7, 2019"
+      },
+      {
+        "title": "FaunaDB & JAMstack with Chris Anderson",
+        "desc": "Chris Anderson talks about the origins of FaunaDB and how it works swimmingly with the JAMstack.",
+        "author": {
+          "name": "swyx",
+          "in": "Useful links"
+        },
+        "date": "March 5, 2019"
+      },
+      {
+        "title": "Featured site: Nike - Just Do It",
+        "desc": "A campaign site from Nike, deployed and hosted as a JAMstack site with Netlify. With content from a headless CMS, and a Gatsby front-end.",
+        "author": {
+          "name": "Phil Hawksworth",
+          "in": "Featured Sites"
+        },
+        "date": "February 27, 2019"
+      },
+      {
+        "title": "Manage your code and assets together with Netlify Large Media",
+        "desc": "Netlify Large Media — a service built on top of Git LFS to enable you to manage all of your project's assets, including those large media files, all together in your git repo.",
+        "author": {
+          "name": "Phil Hawksworth",
+          "in": "News & Announcements"
+        },
+        "date": "February 26, 2019"
+      },
+      {
+        "title": "Netlify and bandwidth",
+        "desc": "Some clear guidance on our new bandwidth plans and pricing",
+        "author": {
+          "name": "Todd Morey",
+          "in": "News & Announcements"
+        },
+        "date": "February 26, 2019"
+      },
+      {
+        "title": "Goodbye Medium — Kent C. Dodds",
+        "desc": "Kent C. Dodds explains why he migrated from Medium to his own JAMstack site, and shows us his approach to leaving no URL behind. Made possible by Netlify's redirects and serverless functions.",
+        "author": {
+          "name": "Phil Hawksworth",
+          "in": "Useful links"
+        },
+        "date": "February 26, 2019"
+      }
+    ]
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "desc": "Subscribe to our newsletter to make sure you don’t miss anything.",
+    "btn-text": "Subscribe"
+  },
+  "popular": {
+    "title": "Popular posts",
+    "posts":[
+      {
+        "title": "Using the React DevTools Profiler to Diagnose React App Performance Issues",
+        "date": "August 29, 2018"
+      },
+      {
+        "title": "Announcing Netlify Drop - The simplicity of BitBalloon, with the added power of Netlify",
+        "date": "August 14, 2018"
+      },
+      {
+        "title": "Buy and secure a custom domain through Netlify",
+        "date": "June 19, 2018"
+      }
+    ]
+  },
+  "categories": {
+    "title": "Categories",
+    "list": [{ "text": "Opinions & Insights" }, { "text": "Useful links" }, { "text": "News & Announcements" },
+      { "text": "Featured Sites" }, { "text": "Tools & Services" }, { "text": "Guides & Tutorials" }]
+  },
+  "contribute": {
+    "title": "Contribute",
+    "desc": "Would you like to contribute a piece to our blog?",
+    "desc2": "Check out our content guidelines!",
+    "link": {
+      "text": "Submit a guest post",
+      "color": "#00ad9f" 
+    }
+  },
+  "footer": {
+    "title": "Ready to try Netlify?",
+    "subtitle": "Deploy a site in 30 seconds.",
+    "copyright": "Netlify © 2019",
+    "footer-links": {
+      "link1": [{ "text": "Products" }, { "text": "Pricing" }, { "text": "Docs" }, { "text": "Blog" }],
+      "link2": [{ "text": "About" }, { "text": "Careers" }, { "text": "Press" }, { "text": "Open Source" }],
+      "link3": [{ "text": "Sales" }, { "text": "Status" }, { "text": "Support" }, { "text": "Community" }],
+      "link4": [{ "text": "Terms" }, { "text": "Privacy" }, { "text": "GDPR" }]
+    }
+  }
+}

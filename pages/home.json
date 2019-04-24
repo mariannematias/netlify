@@ -1,7 +1,8 @@
 { 
   "name": "Netlify",
   "logo": "images/dummy-logo.png",
-  "head-nav": [{ "text": "Products" }, { "text": "Pricing" }, { "text": "Docs" }, { "text": "Blog" }],
+  "head-nav": [{ "text": "Products", "link": "#" }, { "text": "Pricing", "link": "#" }, { "text": "Docs", "link": "#" }, { "text": "Blog", "link": "/blog" }],
+  "head-nav2": [{ "text": "Contact Sales" }, { "text": "Login" }, { "text": "Sign Up →" }],
   "hero": {
     "title": "Build, deploy, and manage modern web projects",
     "subtitle": "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.",

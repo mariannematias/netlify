@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Netlify</title>
+    <title>{{page.name}}</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -30,17 +30,17 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             {{#page.head-nav}}
-                                <a class="nav-item nav-link active" href="#">{{text}}</a>
+                                <a class="nav-item nav-link active" href="{{link}}">{{text}}</a>
                             {{/page.head-nav}}
                             <a class="nav-item nav-link nav-search" href="#"><i class="fas fa-search"></i></a>
                         </div>
                         <form class="form-inline">
                             <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
                         </form>
-                        <div class="ml-auto">
-                            <a class="nav-sales" href="#">Contact Sales</a>
-                            <a class="nav-login" href="#">Login</a>
-                            <a class="nav-signup" href="#"><strong>Sign Up →</strong></a>
+                        <div class="ml-auto head-nav2">
+                            {{#page.head-nav2}}
+                                <a href="#">{{text}}</a>
+                            {{/page.head-nav2}}
                         </div>                        
                     </div>
                 </div>

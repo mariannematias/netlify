@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{page.name}}</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+
+  <body>
+      <div class="head-section">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="toggle fas fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img class="logo" src="{{page.logo}}" class="d-inline-block align-top" alt="">
+                        <span>{{page.name}}</span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            {{#page.head-nav}}
+                                <a class="nav-item nav-link active" href="{{link}}">{{text}}</a>
+                            {{/page.head-nav}}
+                            <a class="nav-item nav-link nav-search" href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                        <form class="form-inline">
+                            <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
+                        </form>
+                        <div class="ml-auto head-nav2">
+                            {{#page.head-nav2}}
+                                <a href="#">{{text}}</a>
+                            {{/page.head-nav2}}
+                        </div>                        
+                    </div>
+                </div>
+            </nav> 
+        </header>
+        <section class="banner-section">
+            <div class="container">
+                <h1 class="banner-title">{{page.hero.title}}</h1>
+                <p class="banner-sub">{{page.hero.subtitle}} <a href="#">{{page.hero.subtitle-a}}</a>{{page.hero.subtitle2}}</p>
+            </div>
+        </section>
+      </div>
+
+    <main>
+        <section class="posts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <h2>{{page.all-posts.title}}</h2>
+                        {{#page.all-posts.posts}}
+                        <div class="post-box">
+                            <h4><a href="#">{{title}}</a></h4>
+                            <p>{{desc}}</p>
+                            <p>By <a href="#">{{author.name}}</a> in <a href="#">{{author.in}}</a> • {{date}}</p>
+                        </div>
+                        {{/page.all-posts.posts}}
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="newsletter side-section">
+                            <h5>{{page.newsletter.title}}</h5>
+                            <p>{{page.newsletter.desc}}</p>
+                            <form>
+                                <input class="form-control news-input" type="text" placeholder="Email address">
+                            </form>
+                            <p class="banner-btn"><button class="btn get-started"><span>{{page.newsletter.btn-text}}</span></button></p>
+                        </div>
+                        <div class="popular side-section">
+                            <h5>{{page.popular.title}}</h5>
+                            {{#page.popular.posts}}
+                                <div class="post">
+                                    <h4><a href="#">{{title}}</a></h4>
+                                    <p>{{date}}</p>
+                                </div>
+                            {{/page.popular.posts}}
+                        </div>
+                        <div class="categories side-section">
+                            <h5>{{page.categories.title}}</h5>
+                            <ul>
+                                {{#page.categories.list}}
+                                    <li><a href="#">{{text}}</a></li>
+                                {{/page.categories.list}}
+                            </ul>
+                        </div>
+                        <div class="contribute side-section">
+                            <h5>{{page.contribute.title}}</h5>
+                            <p>{{page.contribute.desc}}<br>{{page.contribute.desc2}}</p>
+                            <p><a href="#" style="color:{{page.contribute.link.color}}">{{page.contribute.link.text}}</a> →</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paging align-center">
+                    <ul class="page">
+                        <li><a href="#">«</a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li>...</li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container align-center">
+            <div class="footer-links">
+                <p class="align-center footer-logo"><img class="logo" src="{{page.logo}}"></p>
+                <div class="footer-nav">
+                    <ul class="nav-list">
+                        {{#page.footer.footer-links.link1}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link1}}
+                    </ul>
+                    <ul class="nav-list">
+                        {{#page.footer.footer-links.link2}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link2}}
+                    </ul>
+                    <ul class="nav-list">
+                        {{#page.footer.footer-links.link3}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link3}}
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-gitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <ul class="links">
+                        {{#page.footer.footer-links.link4}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.footer.footer-links.link4}}
+                    </ul>
+                    <p class="copyright">{{page.footer.copyright}}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

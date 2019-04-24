@@ -1,0 +1,129 @@
+.head-section {
+    background: #0e1e25;
+    margin-bottom: 7rem;
+}
+.banner-section {
+    padding-bottom: 2rem;
+}
+.banner-sub a {
+    color: #fff;
+    opacity: .8;
+    text-decoration: underline;
+}
+.banner-sub a:hover {
+    opacity: 1;
+}
+.posts h2 {
+    font-weight: 600;
+}
+.post-box {
+    margin-top: 3rem;
+    margin-right: 8rem;
+}
+.post-box h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.post-box h4 a,
+.post-box p:last-child a:hover,
+.paging .page li a:hover {
+    color: #0e1e25;
+}
+.post-box h4 a:hover,
+.post-box p:last-child a,
+.post h4 a:hover,
+.categories ul li a:hover,
+.contribute p a:hover {
+    text-decoration: underline;
+}
+.post-box p,
+.paging .page li,
+.paging .page li a {
+    color: #0e1e258a;
+    font-size: 1rem;
+}
+.post-box p:last-child,
+.post-box p:last-child a {
+    font-size: .85rem;
+    color: #0e1e258a;
+}
+.paging {
+    margin-top: 3rem;
+}
+.paging .page li {
+    display: inline-block;
+    margin-right: .7rem;
+}
+.paging .page li:last-child {
+    margin-right: 0;
+}
+.paging .page li a.active {
+    font-weight: 600;
+    color: #000;
+}
+.side-section {
+    color: #0e1e258a;
+    margin-top: 5.5rem;
+}
+.side-section h5 {
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+.newsletter p,
+.contribute p {
+    font-size: 1rem;
+}
+.news-input {
+    border: 2px solid #0e1e2517;
+    border-radius: 4px;
+    color: #0e1e25;
+    font-weight: 600;
+    padding: 1.2rem 1rem;
+    transition: box-shadow ease-in-out .15s;
+}
+.banner-btn {
+    margin-top: 1rem;
+}
+.post {
+    margin-bottom: 1.5rem;
+}
+.post h4 a,
+.categories ul li a {
+    font-weight: 600;
+    color: #0e1e25;
+    font-size: 1.1rem;
+}
+.post p {
+    font-size: .9rem;
+}
+.categories ul li {
+    margin-top: 1rem;
+}
+.contribute p:last-child {
+    color: #00ad9f;
+}
+/** Footer **/
+footer {
+    padding: 0 0 2rem;
+    background: none;
+}
+.footer-links {
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .post-box {
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .post-box {
+        margin-right: 0;
+    }
+    .side-section {
+        margin-top: 3.5rem;
+    }
+}

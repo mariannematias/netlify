@@ -79,26 +79,20 @@ header {
     width: 100%;
 }
 .navbar-nav a,
-.nav-login,
-.nav-sales,
-.nav-signup {
+.head-nav2 a {
     color: #fff;
     opacity: .8;
     line-height: 1;
 }
-.nav-login,
-.nav-sales,
-.nav-signup {
+.head-nav2 a {
     padding: .5rem;
 }
-.nav-sales {
+.head-nav2 a:first-child {
     border-right: 2px solid #fff3;
     padding: .5rem 1rem;
 }
 .navbar-nav a:hover,
-.nav-login:hover,
-.nav-sales:hover,
-.nav-signup:hover {
+.head-nav2 a:hover {
     color: #fff;
     opacity: 1;
 }
@@ -249,6 +243,9 @@ header {
 }
 .deploy {
     margin-bottom: 6rem;
+}
+.deploy-list {
+    margin-top: 3rem;
 }
 .static-list {
     max-width: 37.577em;
