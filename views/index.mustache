@@ -24,7 +24,7 @@
                         <i class="toggle fas fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="/">
-                        <img class="logo" src="images/dummy-logo.png" class="d-inline-block align-top" alt="">
+                        <img class="logo" src="{{page.logo}}" class="d-inline-block align-top" alt="">
                         <span>{{page.name}}</span>
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -64,15 +64,15 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-12 step step-1">
                         <h3 class="align-center">{{page.section-1.steps.step1.title}}</h3>
-                        <p><img src="images/deploy2.png"></p>
+                        <p><img src="{{page.section-1.steps.step1.img}}"></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-2">
                         <h3 class="align-center">{{page.section-1.steps.step2.title}}</h3>
-                        <p><img src="images/deploy3.png"></p>
+                        <p><img src="{{page.section-1.steps.step2.img}}"></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-3">
                         <h3 class="align-center">{{page.section-1.steps.step3.title}}</h3>
-                        <p><img src="images/deploy1.png"></p>
+                        <p><img src="{{page.section-1.steps.step3.img}}"></p>
                     </div>
                 </div>
                 <p class="subtitle align-center">{{page.section-1.subtitle}}<br>{{page.section-1.subtitle2}}</p>
@@ -85,7 +85,7 @@
                 <h2 id="#footnote" class="section-title align-center">{{page.section-2.title}}</h2>
                 <div class="row static-list">
                     <div class="col-md-3 order-md-1 col-sm-12">
-                        <p><img src="images/img1.jpg"></p>
+                        <p><img src="{{page.section-2.lists.list1.img}}"></p>
                     </div>
                     <div class="col-md-9 order-md-2 col-sm-12 desc">
                         <h3>{{page.section-2.lists.list1.title}}</h3>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="row static-list">
                     <div class="col-md-3 order-md-2 col-sm-12">
-                        <p><img src="images/img3.jpg"></p>
+                        <p><img src="{{page.section-2.lists.list2.img}}"></p>
                     </div>
                     <div class="col-md-9 order-md-1 col-sm-12 desc">
                         <h3>{{page.section-2.lists.list2.title}}</h3>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="row static-list">
                     <div class="col-md-3 order-md-1 col-sm-12">
-                        <p><img src="images/img2.jpg"></p>
+                        <p><img src="{{page.section-2.lists.list3.img}}"></p>
                     </div>
                     <div class="col-md-9 order-md-2 col-sm-12 desc">
                         <h3>{{page.section-2.lists.list3.title}}</h3>
@@ -118,17 +118,17 @@
                 <h2 class="section-title align-center">{{page.section-3.title}}</h2>
                 <div class="row">
                     <div class="col-md-4 col-sm-12 deploy-list">
-                        <p><img src="images/deploy4.png"></p>
+                        <p><img src="{{page.section-3.lists.list1.img}}"></p>
                         <h3>{{page.section-3.lists.list1.title}}</h3>
                         <p>{{page.section-3.lists.list1.subtitle}}</p>
                     </div>
                     <div class="col-md-4 col-sm-12 deploy-list">
-                        <p><img src="images/deploy6.png"></p>
+                        <p><img src="{{page.section-3.lists.list2.img}}"></p>
                         <h3>{{page.section-3.lists.list2.title}}</h3>
                         <p>{{page.section-3.lists.list2.subtitle}}</p>
                     </div>
                     <div class="col-md-4 col-sm-12 deploy-list">
-                        <p><img src="images/deploy5.png"></p>
+                        <p><img src="{{page.section-3.lists.list3.img}}"></p>
                         <h3>{{page.section-3.lists.list3.title}}</h3>
                         <p>{{page.section-3.lists.list3.subtitle}}</p>
                     </div>
@@ -141,7 +141,7 @@
         <section class="clients">
             <div class="container">
                 <h3 class="align-center">{{page.section-4.title}}</h3>
-                <p class="align-center client-logo"><img src="images/logos.png"></p>
+                <p class="align-center client-logo"><img src="{{page.section-4.img}}"></p>
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -191,10 +191,10 @@
             <p class="banner-btn align-center"><button class="btn get-started"><span>{{page.hero.button.text}}</span></button></p>
 
             <div class="footer-links">
-                <p class="align-center footer-logo"><img class="logo" src="images/dummy-logo.png"></p>
+                <p class="align-center footer-logo"><img class="logo" src="{{page.logo}}"></p>
                 <div class="footer-nav">
                     <ul class="nav-list">
-                        <li><a href="#">Products</a></li>
+                        <li><a href="#">{{page.footer.footer-links.link1[0].text}}</a></li>
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#">Docs</a></li>
                         <li><a href="#">Blog</a></li>

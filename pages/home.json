@@ -1,5 +1,7 @@
 { 
   "name": "Netlify",
+  "logo": "images/dummy-logo.png",
+  "head-nav": [{ "text": "Products" }, { "text": "Pricing" }, { "text": "Docs" }, { "text": "Blog" }],
   "hero": {
     "title": "Build, deploy, and manage modern web projects",
     "subtitle": "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.",
@@ -13,13 +15,16 @@
     "title": "Deploy your site in seconds",
     "steps": {
       "step1": {
-        "title": "Connect your repository"
+        "title": "Connect your repository",
+        "img": "images/deploy2.png"
       },
       "step2": {
-        "title": "Add your build settings"
+        "title": "Add your build settings",
+        "img": "images/deploy3.png"
       },
       "step3": {
-        "title": "Deploy your website"
+        "title": "Deploy your website",
+        "img": "images/deploy1.png"
       }
     },
     "subtitle": "*Nope, no gotcha here.",
@@ -29,14 +34,17 @@
     "title": "Go beyond static",
     "lists": {
       "list1": {
+        "img": "images/img1.jpg",
         "title": "Nail the fundamentals with rock-solid deployment",
         "subtitle": "Deploy to a redundant network of servers with built‑in continuous integration and HTTPS."
       },
       "list2": {
+        "img": "images/img3.jpg",
         "title": "Add dynamic functionality with built‑in applications",
         "subtitle": "Manage user identity, HTML forms, and even AWS Lambda functions with ease."
       },
       "list3": {
+        "img": "images/img2.jpg",
         "title": "Customize your projects with your own build tools or microservices",
         "subtitle": "Use your favorite tools for search, payments, commenting, or content management."
       }
@@ -46,14 +54,17 @@
     "title": "There’s a better way to deploy web projects",
     "lists": {
       "list1": {
+        "img": "images/deploy4.png",
         "title": "A single, simplified workflow",
         "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
       },
       "list2": {
+        "img": "images/deploy6.png",
         "title": "Performance from the ground up",
         "subtitle": "Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure."
       },
       "list3": {
+        "img": "images/deploy5.png",
         "title": "Don’t stop at static",
         "subtitle": "Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
       }
@@ -62,6 +73,7 @@
   },
   "section-4": {
     "title": "More than 500,000 developers trust Netlify",
+    "img": "images/logos.png",
     "clients": {
       "client1": {
         "desc-a": "Vuejs.org",
@@ -90,6 +102,12 @@
   "footer": {
     "title": "Ready to try Netlify?",
     "subtitle": "Deploy a site in 30 seconds.",
-    "copyright": "Netlify © 2019"
+    "copyright": "Netlify © 2019",
+    "footer-links": {
+      "link1": [{ "text": "Products" }, { "text": "Pricing" }, { "text": "Docs" }, { "text": "Blog" }],
+      "link2": [{ "text": "About" }, { "text": "Careers" }, { "text": "Press" }, { "text": "Open Source" }],
+      "link3": [{ "text": "Sales" }, { "text": "Status" }, { "text": "Support" }, { "text": "Community" }],
+      "link4": [{ "text": "Terms" }, { "text": "Privacy" }, { "text": "GDPR" }]
+    }
   }
 }
