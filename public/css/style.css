@@ -350,11 +350,15 @@ header {
     padding-top: 3px;
     font-size: 1rem;
 }
+.ready {
+    padding: 5rem 0 4rem;
+    background: #f4f7f8;
+}
 
 /*** Footer ***/
 footer {
-    padding: 5rem 0 2rem;
     background: #f4f7f8;
+    padding-bottom: 2rem;
 }
 .footer-sub {
     color: #0e1e258a;
@@ -362,9 +366,6 @@ footer {
 }
 footer .banner-btn {
     margin-top: 1.3rem;
-}
-.footer-links {
-    margin-top: 7rem;
 }
 .footer-links::before {
     background-image: linear-gradient(-90deg,#0e1e2500 0,#0e1e25 5%,#0e1e25 90%,#0e1e2500 100%);

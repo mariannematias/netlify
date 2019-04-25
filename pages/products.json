@@ -1,0 +1,77 @@
+{ 
+  "head": {
+    "title": "The Netlify Platform",
+    "desc": "Everything needed for modern web development from local setup, to global deployment",
+    "button": {
+        "color": "#00ad9f",
+        "text": "Join now for free"
+    }
+  },
+  "section1": {
+    "list1": {
+      "title": "Netlify Dev",
+      "desc": "Run our entire platform right on your laptop.",
+      "desc2": "Preview it all — site generation, functions, and edge logic.",
+      "link": {
+        "color": "#00ad9f",
+        "text": "Learn more"
+      }
+    },
+    "list2": {
+      "title": "Netlify Build",
+      "desc": "The Git workflow for web development.",
+      "desc2": "Build, deploy, and manage modern web projects.",
+      "link": {
+        "color": "#fff",
+        "text": "Learn more"
+      }
+    },
+    "list3": {
+      "title": "Netlify Edge",
+      "desc": "A new type of application delivery network custom ",
+      "desc2": "designed for blazing fast sites and modern workflows.",
+      "link": {
+        "color": "#fff",
+        "text": "Learn more"
+      }
+    }
+  },
+  "section2": {
+    "title": "Powerful add-ons",
+    "desc": "Say hello to your new superpowers – no backend servers needed.",
+    "lists": [
+      {
+        "img-icon": "images/deploy4-a.png",
+        "title": "Functions",
+        "subtitle": "Deploy AWS Lambda functions without configuring API gateways, coordinating deployments, or setting up an AWS account.",
+        "desc": "Your functions are version-controlled, built, and deployed along with the rest of your Netlify site, and the Netlify API gateway automatically handles service discovery. Plus, your functions benefit from the power of Deploy Previews and rollbacks.",
+        "link": "Learn more",
+        "img": ""
+      },
+      {
+        "img-icon": "images/deploy4-a.png",
+        "title": "Identity",
+        "subtitle": "Manage signups, logins, password recovery, and more — all without rolling your own authentication service.",
+        "desc": "Register and authenticate visitors to your site so you can gate content, enable CMS functionality, make authenticated calls to outside services, and more. Securely integrate with any service that understands JSON Web Tokens.",
+        "link": "Read the docs",
+        "img": ""
+      },
+      {
+        "img-icon": "images/deploy4-a.png",
+        "title": "Forms",
+        "subtitle": "Manage forms and submissions without any server-side code or JavaScript.",
+        "desc": "Code an HTML form into any page on your site, add a netlify attribute to the <form> tag, and you’ll receive submissions in your Netlify dashboard. HTML files are parsed directly at deploy time, so there’s no need for you to make an API call or include extra JavaScript on your site.",
+        "link": "Read the docs",
+        "img": ""
+      },
+      {
+        "img-icon": "images/deploy4-a.png",
+        "title": "Large Media",
+        "subtitle": "Manage binary files of any size right in your repo, just like code.",
+        "desc": "Netlify Large Media makes it easy to handle larger assets from the first Git check in through to final delivery. Version control files many gigabytes in size and dynamically resize images on the fly as they are served.",
+        "link": "Learn more",
+        "img": ""
+      }
+    ]
+  }
+}

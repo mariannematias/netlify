@@ -1,8 +1,4 @@
 { 
-  "name": "Netlify",
-  "logo": "images/dummy-logo.png",
-  "head-nav": [{ "text": "Products", "link": "#" }, { "text": "Pricing", "link": "#" }, { "text": "Docs", "link": "#" }, { "text": "Blog", "link": "/blog" }],
-  "head-nav2": [{ "text": "Contact Sales" }, { "text": "Login" }, { "text": "Sign Up →" }],
   "hero": {
     "title": "Build, deploy, and manage modern web projects",
     "subtitle": "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.",
@@ -98,17 +94,6 @@
         "name": "Emma Barnes #FBPE",
         "social": "@has_many_books"
       }
-    }
-  },
-  "footer": {
-    "title": "Ready to try Netlify?",
-    "subtitle": "Deploy a site in 30 seconds.",
-    "copyright": "Netlify © 2019",
-    "footer-links": {
-      "link1": [{ "text": "Products" }, { "text": "Pricing" }, { "text": "Docs" }, { "text": "Blog" }],
-      "link2": [{ "text": "About" }, { "text": "Careers" }, { "text": "Press" }, { "text": "Open Source" }],
-      "link3": [{ "text": "Sales" }, { "text": "Status" }, { "text": "Support" }, { "text": "Community" }],
-      "link4": [{ "text": "Terms" }, { "text": "Privacy" }, { "text": "GDPR" }]
     }
   }
 }

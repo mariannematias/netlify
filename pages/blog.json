@@ -1,7 +1,7 @@
 { 
   "name": "Netlify",
   "logo": "images/dummy-logo.png",
-  "head-nav": [{ "text": "Products", "link": "#" }, { "text": "Pricing", "link": "#" }, { "text": "Docs", "link": "#" }, { "text": "Blog", "link": "/blog" }],
+  "head-nav": [{ "text": "Products", "link": "/products" }, { "text": "Pricing", "link": "#" }, { "text": "Docs", "link": "#" }, { "text": "Blog", "link": "/blog" }],
   "head-nav2": [{ "text": "Contact Sales" }, { "text": "Login" }, { "text": "Sign Up →" }],
   "hero": {
     "title": "Blog",

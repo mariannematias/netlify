@@ -1,0 +1,38 @@
+<footer>
+    <div class="container align-center">        
+        <div class="footer-links">
+            <p class="align-center footer-logo"><img class="logo" src="{{global.logo}}"></p>
+            <div class="footer-nav">
+                <ul class="nav-list">
+                    {{#global.footer.footer-links.link1}}
+                        <li><a href="#">{{text}}</a></li>
+                    {{/global.footer.footer-links.link1}}
+                </ul>
+                <ul class="nav-list">
+                    {{#global.footer.footer-links.link2}}
+                        <li><a href="#">{{text}}</a></li>
+                    {{/global.footer.footer-links.link2}}
+                </ul>
+                <ul class="nav-list">
+                    {{#global.footer.footer-links.link3}}
+                        <li><a href="#">{{text}}</a></li>
+                    {{/global.footer.footer-links.link3}}
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-gitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <ul class="links">
+                    {{#global.footer.footer-links.link4}}
+                        <li><a href="#">{{text}}</a></li>
+                    {{/global.footer.footer-links.link4}}
+                </ul>
+                <p class="copyright">{{global.footer.copyright}}</p>
+            </div>
+        </div>
+    </div>
+</footer>

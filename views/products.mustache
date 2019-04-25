@@ -1,0 +1,97 @@
+
+<!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{page.name}}</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/products.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  </head>
+
+  <body>
+      <div class="head-section">
+          {{>header}}
+      </div>
+
+  <main>
+      <section class="page-title">
+          <div class="container align-center">
+              <h1 class="title-head">{{page.head.title}}</h1>
+              <p class="title-desc">{{page.head.desc}}</p>
+              <p class="banner-btn align-center"><button class="btn get-started"  style="background-color: {{page.head.button.color}}"><span>{{page.head.button.text}}</span></button></p>
+          </div>
+      </section>
+
+      <section class="netlify-list">
+          <div class="container">
+              <div class="row list">
+                  <div class="col-md-6 col-sm-12">
+                      <h1 class="title-head">{{page.section1.list1.title}}<span>BETA</span></h1>
+                      <p class="title-sub">{{page.section1.list1.desc}}<br>{{page.section1.list1.desc2}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section1.list1.link.color}}">{{page.section1.list1.link.text}}</a> →</p>
+                  </div>
+              </div>
+
+              <div class="row list">
+                  <div class="col-md-6 col-sm-12">
+                      <h1 class="title-head">{{page.section1.list2.title}}</h1>
+                      <p class="title-sub">{{page.section1.list2.desc}}<br>{{page.section1.list2.desc2}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section1.list2.link.color}}">{{page.section1.list2.link.text}}</a> →</p>
+                  </div>
+              </div>
+
+              <div class="row list">
+                  <div class="col-md-6 col-sm-12">
+                      <h1 class="title-head">{{page.section1.list3.title}}</h1>
+                      <p class="title-sub">{{page.section1.list3.desc}}<br>{{page.section1.list3.desc2}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section1.list3.link.color}}">{{page.section1.list3.link.text}}</a> →</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="add-ons">
+          <div class="container">
+                <h2 class="align-center"><strong>{{page.section2.title}}</strong></h2>
+                <p class="title-desc">{{page.section2.desc}}</p>
+                {{#page.section2.lists}}
+                <div class="row add-list">
+                    <div class="col-md-7 col-sm-12 content">
+                        <h3><img src="{{img-icon}}"><strong>{{title}}</strong></h3>
+                        <p class="subtitle">{{subtitle}}</p>
+                        <p class="desc">{{desc}}</p>
+                        <p class="href"><a href="#">{{link}}</a> →</p>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                      
+                    </div>
+                </div>
+                {{/page.section2.lists}}
+          </div>
+      </section>
+
+      <section class="gray-box">
+          <div class="container">
+              <div class="row">
+
+              </div>
+          </div>
+      </section>
+
+  </main>
+
+  {{>footer}}
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  </body>
+</html>

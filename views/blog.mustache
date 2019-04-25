@@ -18,35 +18,7 @@
 
   <body>
       <div class="head-section">
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="toggle fas fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="/">
-                        <img class="logo" src="{{page.logo}}" class="d-inline-block align-top" alt="">
-                        <span>{{page.name}}</span>
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            {{#page.head-nav}}
-                                <a class="nav-item nav-link active" href="{{link}}">{{text}}</a>
-                            {{/page.head-nav}}
-                            <a class="nav-item nav-link nav-search" href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                        <form class="form-inline">
-                            <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
-                        </form>
-                        <div class="ml-auto head-nav2">
-                            {{#page.head-nav2}}
-                                <a href="#">{{text}}</a>
-                            {{/page.head-nav2}}
-                        </div>                        
-                    </div>
-                </div>
-            </nav> 
-        </header>
+        {{>header}}
         <section class="banner-section">
             <div class="container">
                 <h1 class="banner-title">{{page.hero.title}}</h1>
@@ -118,44 +90,7 @@
 
     </main>
 
-    <footer>
-        <div class="container align-center">
-            <div class="footer-links">
-                <p class="align-center footer-logo"><img class="logo" src="{{page.logo}}"></p>
-                <div class="footer-nav">
-                    <ul class="nav-list">
-                        {{#page.footer.footer-links.link1}}
-                            <li><a href="#">{{text}}</a></li>
-                        {{/page.footer.footer-links.link1}}
-                    </ul>
-                    <ul class="nav-list">
-                        {{#page.footer.footer-links.link2}}
-                            <li><a href="#">{{text}}</a></li>
-                        {{/page.footer.footer-links.link2}}
-                    </ul>
-                    <ul class="nav-list">
-                        {{#page.footer.footer-links.link3}}
-                            <li><a href="#">{{text}}</a></li>
-                        {{/page.footer.footer-links.link3}}
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <ul class="social">
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-github"></i></a></li>
-                        <li><a href="#"><i class="fab fa-gitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                    <ul class="links">
-                        {{#page.footer.footer-links.link4}}
-                            <li><a href="#">{{text}}</a></li>
-                        {{/page.footer.footer-links.link4}}
-                    </ul>
-                    <p class="copyright">{{page.footer.copyright}}</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {{>footer}}
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
