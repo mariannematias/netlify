@@ -78,3 +78,122 @@
     opacity: .38;
     padding: .3rem .5rem;
 }
+.author-info {
+    margin-top: 2rem;
+    position: relative;
+}
+.author-info img {
+    width: 60px;
+}
+.author-info .info {
+    color: #0e1e25cc;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-left: 1rem;
+    position: absolute;
+    bottom: -1.3rem;
+
+}
+.author-info .info span,
+.author-info .info span a {
+    font-size: 1rem;
+    color: #0e1e258a;
+}
+.newsletter {
+    margin-top: 3rem;
+    color: #0e1e258a;
+}
+.newsletter::before {
+    background-image: linear-gradient(-90deg,#0e1e2500 0,#0e1e25 5%,#0e1e25 90%,#0e1e2500 100%);
+    content: "";
+    display: block;
+    height: 2px;
+    opacity: .08;
+    position: absolute;
+    width: 100%;
+}
+.newsletter h5 {
+    font-weight: 600;
+    color: #0e1e25;
+    margin-bottom: 1.2rem;
+    padding-top: 2.5rem;
+}
+.news-input {
+    width: 40%;
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1.25rem 1rem
+}
+.newsletter form {
+    margin-top: 2rem;
+}
+.banner-section {
+    background-image: url(../images/laptop.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 5rem 0 8rem;
+    margin-top: -4rem;
+}
+.post-section {
+    position: relative;
+}
+.next {
+    margin-top: 6rem;
+    width: 85%;
+}
+.next-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #ffffff1a, 0 2px 4px 0 #0e1e251f;
+    overflow: hidden;
+    padding: 3rem 3rem 1rem 2rem;
+    position: relative;
+    z-index: 2;
+}
+.next-box::before {
+    background: #0e1e25;
+    content: "";
+    display: block;
+    height: 2rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.post-box {
+    margin-top: 1rem;
+    margin-right: 0;
+}
+.left-box {
+    margin-left: 2rem;
+}
+.right-box {
+    margin-right: 2rem;
+}
+
+/** Footer **/
+.footer-links::before {
+    background-image: none;
+}
+
+@media (max-width: 768px) {
+    .next {
+        width: 100%;
+    }
+    .next-box {
+        height: 305px;
+    }
+}
+
+@media (max-width: 576px) {
+    .news-input {
+        width: 60%;
+    }
+    .left-box {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .right-box {
+        margin-right: 0;
+    }
+}

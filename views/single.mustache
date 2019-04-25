@@ -51,7 +51,7 @@
       </div>
 
     <main>
-        <section>
+        <section class="post-section">
             <div class="container post-container">
                 <p class="post-meta">By <a href="#">{{page.post.meta.author}}</a> in <a href="#">{{page.post.meta.in}}</a> • {{page.post.meta.date}}</p>
                 <h1><strong>{{page.post.title}}</strong></h1>
@@ -113,9 +113,53 @@
                             <li><a href="#">{{text}}</a></li>
                         {{/page.author.tags}}
                     </ul>
+                    <div class="author-info">
+                        <a href="#"><img src="{{page.author.img}}"></a>
+                        <p class="info">Written by <a href="#">{{page.author.name}}</a><br> <span>Published in <a href="#">{{page.author.in}}</a> {{page.author.date}}</span></p>
+                    </div>
+                </div>
+
+                <div class="newsletter">
+                    <h5>{{page.newsletter.title}}</h5>
+                    <p>{{page.newsletter.desc}}</p>
+                    <form>
+                        <input class="form-control news-input" type="text" placeholder="Email address">
+                        <button class="btn get-started"><span>{{page.newsletter.btn-text}}</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-fluid next">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="next-box left-box">
+                            <div class="post-box next-content">
+                                <h4>{{page.next.post1.title}}</h4>
+                                <p>{{page.next.post1.desc}}</p>
+                                <p>By <a href="#">{{page.next.post1.name}}</a> in <a href="#">{{page.next.post1.in}}</a> • {{page.next.post1.date}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="next-box right-box">
+                            <div class="post-box next-content">
+                                <h4>{{page.next.post2.title}}</h4>
+                                <p>{{page.next.post2.desc}}</p>
+                                <p>By <a href="#">{{page.next.post2.name}}</a> in <a href="#">{{page.next.post2.in}}</a> • {{page.next.post2.date}}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="banner-section">
+            <div class="container">
+                <h1 class="banner-title">{{page.hero.title}}</h1>
+                <p class="banner-sub">{{page.hero.subtitle}}</p>
+                <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.hero.button.color}}"><span>{{page.hero.button.text}}</span></button></p>
+            </div>
+        </section>
+            
     </main>
 
     <footer>

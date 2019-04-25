@@ -130,7 +130,40 @@
     "text": "Watch the announcement and live demo from JAMstack_conf in New York."
   },
   "author": {
-    "tags": [{"text": "Netlify Dev"}, {"text": "Tools"}, {"text": "Products"}]
+    "tags": [{"text": "Netlify Dev"}, {"text": "Tools"}, {"text": "Products"}],
+    "img": "images/3.png",
+    "name": "Phil Hawksworth",
+    "in": "News & Announcements",
+    "date": "on April 9, 2019"
+  },
+  "newsletter": {
+    "title": "Subscribe to the newsletter",
+    "desc": "Exploring the JAMstack, static sites, and the future of web development. Subscribe to our newsletter to make sure you don't miss anything.",
+    "btn-text": "Subscribe"
+  },
+  "hero": {
+    "title": "Build, deploy, and manage modern web projects",
+    "subtitle": "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.",
+    "button": {
+      "color": "#00ad9f",
+      "text": "Join now for free"
+    }
+  },
+  "next": {
+    "post1": {
+      "title": "Deploy CodeSandbox to Netlify",
+      "desc": "Announcing the CodeSandbox Netlify integration. Create and deploy sites to Netlify directly from within CodeSandbox!",
+      "name": "David Wells",
+      "in": "News & Announcements",
+      "date": "March 26, 2019"
+    },
+    "post2": {
+      "title": "Featured site: Gridsome",
+      "desc": "A static site generator for the VueJS community. With a pre-generated site hosted on Netlify and optimised for performance.",
+      "name": "Phil Hawksworth",
+      "in": "Featured Sites",
+      "date": "February 20, 2019"
+    }
   },
   "footer": {
     "title": "Ready to try Netlify?",
