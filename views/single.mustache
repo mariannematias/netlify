@@ -12,6 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/blog.css" rel="stylesheet">
+    <link href="css/single.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
@@ -47,75 +48,74 @@
                 </div>
             </nav> 
         </header>
-        <section class="banner-section">
-            <div class="container">
-                <h1 class="banner-title">{{page.hero.title}}</h1>
-                <p class="banner-sub">{{page.hero.subtitle}} <a href="#">{{page.hero.subtitle-a}}</a>{{page.hero.subtitle2}}</p>
-            </div>
-        </section>
       </div>
 
     <main>
-        <section class="posts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12">
-                        <h2>{{page.all-posts.title}}</h2>
-                        {{#page.all-posts.posts}}
-                        <div class="post-box">
-                            <h4><a href="{{link}}">{{title}}</a></h4>
-                            <p>{{desc}}</p>
-                            <p>By <a href="#">{{author.name}}</a> in <a href="#">{{author.in}}</a> • {{date}}</p>
-                        </div>
-                        {{/page.all-posts.posts}}
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="newsletter side-section">
-                            <h5>{{page.newsletter.title}}</h5>
-                            <p>{{page.newsletter.desc}}</p>
-                            <form>
-                                <input class="form-control news-input" type="text" placeholder="Email address">
-                            </form>
-                            <p class="banner-btn"><button class="btn get-started"><span>{{page.newsletter.btn-text}}</span></button></p>
-                        </div>
-                        <div class="popular side-section">
-                            <h5>{{page.popular.title}}</h5>
-                            {{#page.popular.posts}}
-                                <div class="post">
-                                    <h4><a href="#">{{title}}</a></h4>
-                                    <p>{{date}}</p>
-                                </div>
-                            {{/page.popular.posts}}
-                        </div>
-                        <div class="categories side-section">
-                            <h5>{{page.categories.title}}</h5>
-                            <ul>
-                                {{#page.categories.list}}
-                                    <li><a href="#">{{text}}</a></li>
-                                {{/page.categories.list}}
-                            </ul>
-                        </div>
-                        <div class="contribute side-section">
-                            <h5>{{page.contribute.title}}</h5>
-                            <p>{{page.contribute.desc}}<br>{{page.contribute.desc2}}</p>
-                            <p><a href="#" style="color:{{page.contribute.link.color}}">{{page.contribute.link.text}}</a> →</p>
-                        </div>
-                    </div>
+        <section>
+            <div class="container post-container">
+                <p class="post-meta">By <a href="#">{{page.post.meta.author}}</a> in <a href="#">{{page.post.meta.in}}</a> • {{page.post.meta.date}}</p>
+                <h1><strong>{{page.post.title}}</strong></h1>
+                <p class="post-img"><img src="{{page.post.img}}"></p>
+                <p>{{page.post.content.p1}} <a href="#">{{page.post.content.a}}</a> {{page.post.content.p1a}}</p>
+                <p>{{page.post.content.p2}}</p>
+                <p>{{page.post.content.p3}}</p>
+
+                <div class="tools other-section">
+                    <h2><strong>{{page.tools.title}}</strong></h2>
+                    {{#page.tools.content}}
+                        <p>{{text}}</p>
+                    {{/page.tools.content}}
+                    <p class="quote">{{page.tools.quote}}</p>
                 </div>
-                <div class="paging align-center">
-                    <ul class="page">
-                        <li><a href="#">«</a></li>
-                        <li><a href="#" class="active">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li>...</li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">»</a></li>
+
+                <div class="confidence other-section">
+                    <h2><strong>{{page.confidence.title}}</strong></h2>
+                    {{#page.confidence.content}}
+                        <p>{{text}}</p>
+                    {{/page.confidence.content}}
+                </div>
+
+                <div class="dev other-section">
+                    <h2><strong>{{page.dev.title}}</strong></h2>
+                    {{#page.dev.content}}
+                        <p>{{text}}</p>
+                    {{/page.dev.content}}
+                    <pre><code>{{page.dev.code}}</code></pre>
+                    {{#page.dev.content2}}
+                        <p>{{text}}</p>
+                    {{/page.dev.content2}}
+                </div>
+
+                <div class="live other-section">
+                    <h2><strong>{{page.live.title}}</strong></h2>
+                    <p>{{page.live.p}}</p>
+                    <pre><code><span>{{page.live.code.comment}}</span>{{page.live.code.text}}</code></pre>
+                    {{#page.live.content}}
+                        <p>{{text}}</p>
+                    {{/page.live.content}}
+                </div>
+
+                <div class="hands-on other-section">
+                    <h2><strong>{{page.hands-on.title}}</strong></h2>
+                    {{#page.hands-on.content}}
+                        <p>{{text}}</p>
+                    {{/page.hands-on.content}}
+                </div>
+
+                <div class="update other-section">
+                    <h2><strong>{{page.update.title}}</strong></h2>
+                    <p>{{page.update.text}}</p>
+                </div>
+
+                <div class="author-box">
+                    <ul>
+                        {{#page.author.tags}}
+                            <li><a href="#">{{text}}</a></li>
+                        {{/page.author.tags}}
                     </ul>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>

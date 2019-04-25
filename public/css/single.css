@@ -1,0 +1,80 @@
+.head-section {
+    padding-bottom: 1rem;
+}
+.post-container {
+    max-width: 38em;
+    color: #0e1e25cc;
+}
+.post-container h1 {
+    font-size: 3rem;
+    color: #0e1e25;
+}
+.post-meta,
+.post-meta a {
+    color: #0e1e258a;
+    font-size: 1rem;
+}
+.post-meta a {
+    text-decoration: underline;
+}
+.post-meta a:hover,
+.post-container p a:hover {
+    text-decoration: underline;
+    color: #0e1e25;
+}
+.post-container p a {
+    color: #0e1e25cc;
+    text-decoration: underline;
+}
+.post-container p {
+    margin-bottom: 1.5rem;
+}
+.post-img {
+    margin: 4rem 0 3rem;
+}
+.post-img img {
+    margin-bottom: 1.5rem;
+}
+.other-section {
+    margin-top: 6rem;
+}
+.other-section h2 {
+    margin-bottom: 1.5rem;
+}
+.quote {
+    border-left: 4px solid #0e1e2517;
+    color: #0e1e258a;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 2rem 0;
+    padding-left: 2rem;
+}
+.dev pre,
+.live pre {
+    background: #0e1e25;
+    border-radius: 4px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.live pre span {
+    color: #7c7c7c;
+    display: block;
+}
+.author-box {
+    margin-top: 3rem;
+}
+.author-box ul li {
+    display: inline-block;
+}
+.author-box ul li a {
+    background: #0e1e25de;
+    border-radius: 4px;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .03em;
+    margin-right: .5rem;
+    opacity: .38;
+    padding: .3rem .5rem;
+}

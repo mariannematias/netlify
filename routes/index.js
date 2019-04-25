@@ -4,6 +4,7 @@ const vertex = require('vertex360')({site_id: process.env.TURBO_APP_ID})
 const router = vertex.router()
 const home = require('../pages/home.json')
 const blog = require('../pages/blog.json')
+const single = require('../pages/single.json')
 
 /*  This is the home route. It renders the index.mustache page from the views directory.
 	Data is rendered using the Mustache templating engine. For more
@@ -20,6 +21,13 @@ router.get('/blog', (req, res) => {
 		page: blog
 	}
 	res.render('blog', data)
+})
+
+router.get('/single', (req, res) => {
+	const data = {
+		page: single
+	}
+	res.render('single', data)
 })
 
 
