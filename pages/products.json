@@ -46,7 +46,7 @@
         "subtitle": "Deploy AWS Lambda functions without configuring API gateways, coordinating deployments, or setting up an AWS account.",
         "desc": "Your functions are version-controlled, built, and deployed along with the rest of your Netlify site, and the Netlify API gateway automatically handles service discovery. Plus, your functions benefit from the power of Deploy Previews and rollbacks.",
         "link": "Learn more",
-        "img": ""
+        "img": "images/temp4.png"
       },
       {
         "img-icon": "images/deploy4-a.png",
@@ -54,7 +54,7 @@
         "subtitle": "Manage signups, logins, password recovery, and more — all without rolling your own authentication service.",
         "desc": "Register and authenticate visitors to your site so you can gate content, enable CMS functionality, make authenticated calls to outside services, and more. Securely integrate with any service that understands JSON Web Tokens.",
         "link": "Read the docs",
-        "img": ""
+        "img": "images/temp1.png"
       },
       {
         "img-icon": "images/deploy4-a.png",
@@ -62,7 +62,7 @@
         "subtitle": "Manage forms and submissions without any server-side code or JavaScript.",
         "desc": "Code an HTML form into any page on your site, add a netlify attribute to the <form> tag, and you’ll receive submissions in your Netlify dashboard. HTML files are parsed directly at deploy time, so there’s no need for you to make an API call or include extra JavaScript on your site.",
         "link": "Read the docs",
-        "img": ""
+        "img": "images/temp3.png"
       },
       {
         "img-icon": "images/deploy4-a.png",
@@ -70,8 +70,66 @@
         "subtitle": "Manage binary files of any size right in your repo, just like code.",
         "desc": "Netlify Large Media makes it easy to handle larger assets from the first Git check in through to final delivery. Version control files many gigabytes in size and dynamically resize images on the fly as they are served.",
         "link": "Learn more",
-        "img": ""
+        "img": "images/temp2.png"
       }
     ]
+  },
+  "section3": {
+    "title": "Wow, right out of the box",
+    "desc": "Whether you’re having a facepalm moment or you just need to ship your 404 page, Netlify’s automated workflow makes the hard stuff simple.",
+    "link": {
+      "color": "#00ad9f",
+      "text": "See the workflow"
+    },
+    "checklist": [{"text": "Atomic deploys"}, {"text": "Cache invalidation"}, {"text": "Unlimited snapshots and rollbacks"}, {"text": "Custom headers"}, {"text": "Proxy and redirect rules"}, {"text": "DNS management"}]
+  },
+  "section4": {
+    "title": "Netlify makes it simple",
+    "desc": "You shouldn’t have to be an architecture expert to build and deploy a feature-rich site.",
+    "lists": {
+      "list1": {
+        "img": "images/img1.jpg",
+        "title": "Push your site live",
+        "desc": "Deploy your site to an ultra-redundant global Application Delivery Network that’s purpose built for serving pages and assets quickly and consistently."
+      },
+      "list2": {
+        "img": "images/img1.jpg",
+        "title": "Automate deployment",
+        "desc": "Netlify’s built-in continuous deployment automatically runs your build commands and deploys the result whenever you push to your Git repository."
+      },
+      "list3": {
+        "img": "images/img1.jpg",
+        "title": "Add a custom domain",
+        "desc": "Buy a custom domain through Netlify or add a domain you already own. Manage DNS zones and records using Netlify’s DNS hosting."
+      },
+      "list4": {
+        "img": "images/img1.jpg",
+        "title": "HTTPS is automatic",
+        "desc": "Your site will automatically be secured with a free TLS certificate from Let’s Encrypt. (No clicks necessary.)"
+      },
+      "list5": {
+        "img": "images/img1.jpg",
+        "title": "Preview your changes",
+        "desc": "See what changes will look like in production using Deploy Previews. Get a unique, permanent URL whenever you submit a pull request. It’s posted as a commit status for easy collaboration."
+      }
+    }
+  },
+  "section5": {
+    "title": "Ready to put the robots to work?",
+    "desc": "Take your site to the next level with sophisticated, API-driven functionality. We’ll take care of all the complicated server setup and integration.",
+    "link": {
+      "color": "#00ad9f",
+      "text": "Join now for free"
+    },
+    "checklist": [{"text": "API/microservices gateway"}, {"text": "JWT-based access control"}, {"text": "Proxied authentication headers"}, {"text": "Stored environment variables"}, {"text": "Incoming and outgoing webhooks"}]
+  },
+  "section6": {
+    "title": "Bring your favorite tools",
+    "desc": "Whether you’re creating your own customizations, extending your workflow with open source projects, or integrating best-in-class microservices, Netlify’s highly-extensible APIs let you add as little or as much tooling as you need.",
+    "link": {
+      "color": "#fff",
+      "text": "See plans and pricing"
+    },
+    "icons": [{"img": "images/icon6.png"}, {"img": "images/icon5.png"}, {"img": "images/icon2.png"}, {"img": "images/icon3.png"}, {"img": "images/icon4.png"}, {"img": "images/icon1.png"}]
   }
 }

@@ -31,29 +31,23 @@
       </section>
 
       <section class="netlify-list">
-          <div class="container">
-              <div class="row list">
-                  <div class="col-md-6 col-sm-12">
-                      <h1 class="title-head">{{page.section1.list1.title}}<span>BETA</span></h1>
-                      <p class="title-sub">{{page.section1.list1.desc}}<br>{{page.section1.list1.desc2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list1.link.color}}">{{page.section1.list1.link.text}}</a> →</p>
-                  </div>
+          <div class="container-fluid">
+              <div class="list list-dev">
+                  <h1 class="title-head">{{page.section1.list1.title}}<span>BETA</span></h1>
+                  <p class="title-sub">{{page.section1.list1.desc}}<br>{{page.section1.list1.desc2}}</p>
+                  <p class="learn"><a href="#" style="color:{{page.section1.list1.link.color}}">{{page.section1.list1.link.text}}</a> →</p>
               </div>
 
-              <div class="row list">
-                  <div class="col-md-6 col-sm-12">
-                      <h1 class="title-head">{{page.section1.list2.title}}</h1>
-                      <p class="title-sub">{{page.section1.list2.desc}}<br>{{page.section1.list2.desc2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list2.link.color}}">{{page.section1.list2.link.text}}</a> →</p>
-                  </div>
+              <div class="list list-build">
+                  <h1 class="title-head">{{page.section1.list2.title}}</h1>
+                  <p class="title-sub">{{page.section1.list2.desc}}<br>{{page.section1.list2.desc2}}</p>
+                  <p class="learn"><a href="#" style="color:{{page.section1.list2.link.color}}">{{page.section1.list2.link.text}}</a> →</p>
               </div>
 
-              <div class="row list">
-                  <div class="col-md-6 col-sm-12">
-                      <h1 class="title-head">{{page.section1.list3.title}}</h1>
-                      <p class="title-sub">{{page.section1.list3.desc}}<br>{{page.section1.list3.desc2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list3.link.color}}">{{page.section1.list3.link.text}}</a> →</p>
-                  </div>
+              <div class="list list-edge">
+                  <h1 class="title-head">{{page.section1.list3.title}}</h1>
+                  <p class="title-sub">{{page.section1.list3.desc}}<br>{{page.section1.list3.desc2}}</p>
+                  <p class="learn"><a href="#" style="color:{{page.section1.list3.link.color}}">{{page.section1.list3.link.text}}</a> →</p>
               </div>
           </div>
       </section>
@@ -63,17 +57,17 @@
                 <h2 class="align-center"><strong>{{page.section2.title}}</strong></h2>
                 <p class="title-desc">{{page.section2.desc}}</p>
                 {{#page.section2.lists}}
-                <div class="row add-list">
-                    <div class="col-md-7 col-sm-12 content">
-                        <h3><img src="{{img-icon}}"><strong>{{title}}</strong></h3>
-                        <p class="subtitle">{{subtitle}}</p>
-                        <p class="desc">{{desc}}</p>
-                        <p class="href"><a href="#">{{link}}</a> →</p>
+                    <div class="row add-list">
+                        <div class="col-md-7 col-sm-12 content">
+                            <h3><img src="{{img-icon}}"><strong>{{title}}</strong></h3>
+                            <p class="subtitle">{{subtitle}}</p>
+                            <p class="desc">{{desc}}</p>
+                            <p class="href"><a href="#">{{link}}</a> →</p>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <p><img class="img-icon" src="{{img}}"></p>
+                        </div>
                     </div>
-                    <div class="col-md-5 col-sm-12">
-                      
-                    </div>
-                </div>
                 {{/page.section2.lists}}
           </div>
       </section>
@@ -81,8 +75,109 @@
       <section class="gray-box">
           <div class="container">
               <div class="row">
-
+                  <div class="col-md-8 col-sm-12">
+                      <h2 class="title-head2"><strong>{{page.section3.title}}</strong></h2>
+                      <p class="title-desc">{{page.section3.desc}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section3.link.color}}">{{page.section3.link.text}}</a> →</p>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                      <div class="check-list">
+                          <ul>
+                              {{#page.section3.checklist}}
+                                  <li><i class="fas fa-check-circle"></i>{{text}}</li>
+                              {{/page.section3.checklist}}
+                          </ul>
+                      </div>
+                  </div>
               </div>
+          </div>
+      </section>
+
+      <section class="simple">
+          <div class="container">
+                <h2 class="align-center"><strong>{{page.section4.title}}</strong></h2>
+                <p class="title-desc align-center">{{page.section4.desc}}</p>
+                <div class="container-list">
+                    <div class="row simple-list">
+                        <div class="col-md-9 col-sm-12 order-md-2 pad-top">
+                            <h4><strong>{{page.section4.lists.list1.title}}</strong></h4>
+                            <p>{{page.section4.lists.list1.desc}}</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12 order-md-1">
+                            <img src="{{page.section4.lists.list1.img}}">
+                        </div>
+                    </div>
+                    <div class="row simple-list">
+                        <div class="col-md-9 col-sm-12 pad-top">
+                            <h4><strong>{{page.section4.lists.list2.title}}</strong></h4>
+                            <p>{{page.section4.lists.list2.desc}}</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <img src="{{page.section4.lists.list2.img}}">
+                        </div>
+                    </div>
+                    <div class="row simple-list">
+                        <div class="col-md-9 col-sm-12 order-md-2 pad-top">
+                            <h4><strong>{{page.section4.lists.list3.title}}</strong></h4>
+                            <p>{{page.section4.lists.list3.desc}}</p>
+                        </div>
+                        <div class="col-md-3 order-md-1 col-sm-12">
+                            <img src="{{page.section4.lists.list3.img}}">
+                        </div>
+                    </div>
+                    <div class="row simple-list">
+                        <div class="col-md-9 col-sm-12 pad-top">
+                            <h4><strong>{{page.section4.lists.list4.title}}</strong></h4>
+                            <p>{{page.section4.lists.list4.desc}}</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <img src="{{page.section4.lists.list4.img}}">
+                        </div>
+                    </div>
+                    <div class="row simple-list">
+                        <div class="col-md-9 col-sm-12 order-md-2 pad-top">
+                            <h4><strong>{{page.section4.lists.list5.title}}</strong></h4>
+                            <p>{{page.section4.lists.list5.desc}}</p>
+                        </div>
+                        <div class="col-md-3 order-md-1 col-sm-12">
+                            <img src="{{page.section4.lists.list5.img}}">
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </section>
+
+      <section class="gray-box">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-sm-12  order-md-2 right">
+                      <h2 class="title-head3"><strong>{{page.section5.title}}</strong></h2>
+                      <p class="title-desc">{{page.section5.desc}}</p>
+                      <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.section5.link.color}}"><span>{{page.section5.link.text}}</span></button></p>
+                  </div>
+                  <div class="col-md-4 col-sm-12 order-md-1">
+                      <div class="check-list">
+                          <ul>
+                              {{#page.section5.checklist}}
+                                  <li><i class="fas fa-check-circle"></i>{{text}}</li>
+                              {{/page.section5.checklist}}
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="blue-box">
+          <div class="container align-center">
+              <h2 class="title-head2"><strong>{{page.section6.title}}</strong></h2>
+              <p class="title-desc">{{page.section6.desc}}</p>
+              <p class="learn"><a href="#" style="color:{{page.section6.link.color}}">{{page.section6.link.text}}</a> →</p>
+              <ul class="icon-list">
+                  {{#page.section6.icons}}
+                      <li><img src="{{img}}"></li>
+                  {{/page.section6.icons}}
+              </ul>
           </div>
       </section>
 
