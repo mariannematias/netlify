@@ -354,6 +354,9 @@ header {
     padding: 5rem 0 4rem;
     background: #f4f7f8;
 }
+.deploy-list:nth-child(2) p img {
+    width: 57%;
+}
 
 /*** Footer ***/
 footer {

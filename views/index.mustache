@@ -33,18 +33,12 @@
             <div class="container">
                 <h2 class="section-title align-center">{{page.section-1.title}}<a class="footnote-link" href="#footnote">*</a></h2>
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 step step-1">
-                        <h3 class="align-center">{{page.section-1.steps.step1.title}}</h3>
-                        <p><img src="{{page.section-1.steps.step1.img}}"></p>
+                    {{#page.section-1.steps}}
+                    <div class="{{class}}">
+                        <h3 class="align-center">{{title}}</h3>
+                        <p><img src="{{img}}"></p>
                     </div>
-                    <div class="col-md-4 col-sm-12 step step-2">
-                        <h3 class="align-center">{{page.section-1.steps.step2.title}}</h3>
-                        <p><img src="{{page.section-1.steps.step2.img}}"></p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 step step-3">
-                        <h3 class="align-center">{{page.section-1.steps.step3.title}}</h3>
-                        <p><img src="{{page.section-1.steps.step3.img}}"></p>
-                    </div>
+                    {{/page.section-1.steps}}
                 </div>
                 <p class="subtitle align-center">{{page.section-1.subtitle}}<br>{{page.section-1.subtitle2}}</p>
                 <p class="banner-btn align-center"><button class="btn get-started"  style="background-color: {{page.hero.button.color}}"><span>{{page.hero.button.text}}</span></button></p>
@@ -88,21 +82,13 @@
             <div class="container">
                 <h2 class="section-title align-center">{{page.section-3.title}}</h2>
                 <div class="row">
+                    {{#page.section-3.lists}}
                     <div class="col-md-4 col-sm-12 deploy-list">
-                        <p><img src="{{page.section-3.lists.list1.img}}"></p>
-                        <h3>{{page.section-3.lists.list1.title}}</h3>
-                        <p>{{page.section-3.lists.list1.subtitle}}</p>
+                        <p><img src="{{img}}"></p>
+                        <h3>{{title}}</h3>
+                        <p>{{subtitle}}</p>
                     </div>
-                    <div class="col-md-4 col-sm-12 deploy-list">
-                        <p><img style="width: 57%;" src="{{page.section-3.lists.list2.img}}"></p>
-                        <h3>{{page.section-3.lists.list2.title}}</h3>
-                        <p>{{page.section-3.lists.list2.subtitle}}</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 deploy-list">
-                        <p><img src="{{page.section-3.lists.list3.img}}"></p>
-                        <h3>{{page.section-3.lists.list3.title}}</h3>
-                        <p>{{page.section-3.lists.list3.subtitle}}</p>
-                    </div>
+                    {{/page.section-3.lists}}
                 </div>
                 <p class="banner-btn align-center"><button class="btn get-started" style="background-color: {{page.hero.button.color}}"><span>{{page.hero.button.text}}</span></button></p>
                 <p class="align-center"><a href="#"><strong>{{page.section-3.subtitle}}</a></strong> →</p>

@@ -10,20 +10,23 @@
   },
   "section-1": {
     "title": "Deploy your site in seconds",
-    "steps": {
-      "step1": {
-        "title": "Connect your repository",
-        "img": "images/deploy2.png"
+    "steps": [
+      {
+          "class": "col-md-4 col-sm-12 step step-1",
+          "title": "Connect your repository",
+          "img": "images/deploy2.png"
       },
-      "step2": {
+      {
+        "class": "col-md-4 col-sm-12 step step-2",
         "title": "Add your build settings",
         "img": "images/deploy3.png"
       },
-      "step3": {
+      {
+        "class": "col-md-4 col-sm-12 step step-3",
         "title": "Deploy your website",
         "img": "images/deploy1.png"
       }
-    },
+    ],
     "subtitle": "*Nope, no gotcha here.",
     "subtitle2": "It just takes a few clicks."
   },
@@ -49,23 +52,23 @@
   },
   "section-3": {
     "title": "There’s a better way to deploy web projects",
-    "lists": {
-      "list1": {
-        "img": "images/deploy4-c.png",
-        "title": "A single, simplified workflow",
-        "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
+    "lists": [
+      {
+          "img": "images/deploy4-c.png",
+          "title": "A single, simplified workflow",
+          "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
       },
-      "list2": {
+      {
         "img": "images/deploy4-b.png",
         "title": "Performance from the ground up",
         "subtitle": "Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure."
       },
-      "list3": {
+      {
         "img": "images/deploy4-a.png",
         "title": "Don’t stop at static",
         "subtitle": "Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
       }
-    },
+    ],
     "subtitle": "See plans and pricing"
   },
   "section-4": {
