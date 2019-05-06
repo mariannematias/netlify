@@ -80,6 +80,7 @@
         "desc": "is now powered by ",
         "desc-a1": "@Netlify",
         "desc2": "with a free open source team plan. Really really impressive and smooth deployment experience.",
+        "img": "images/2.png",
         "name": "Evan You",
         "social": "@youyuxi"
       },
@@ -87,6 +88,7 @@
         "desc": "Haven’t been as impressed by a software product as I am with ",
         "desc-a": "@Netlify",
         "desc2": "in a long time. Huge time saver, works as promised. Neat stuff, folks.",
+        "img": "images/3.png",
         "name": "Chance Griffin",
         "social": "@cbgriffin"
       },
@@ -94,6 +96,7 @@
         "desc": "I think ",
         "desc-a": "@Netlify",
         "desc2": "might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
+        "img": "images/4.png",
         "name": "Emma Barnes #FBPE",
         "social": "@has_many_books"
       }

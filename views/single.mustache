@@ -27,7 +27,7 @@
             <div class="container post-container">
                 <p class="post-meta">By <a href="#">{{page.post.meta.author}}</a> in <a href="#">{{page.post.meta.in}}</a> • {{page.post.meta.date}}</p>
                 <h1><strong>{{page.post.title}}</strong></h1>
-                <p class="post-img"><img src="{{page.post.img}}"></p>
+                <p class="post-img"><img src="{{{page.post.img}}}"></p>
                 <p>{{page.post.content.p1}} <a href="#">{{page.post.content.a}}</a> {{page.post.content.p1a}}</p>
                 <p>{{page.post.content.p2}}</p>
                 <p>{{page.post.content.p3}}</p>
@@ -86,7 +86,7 @@
                         {{/page.author.tags}}
                     </ul>
                     <div class="author-info">
-                        <a href="#"><img src="{{page.author.img}}"></a>
+                        <a href="#"><img src="{{{page.author.img}}}"></a>
                         <p class="info">Written by <a href="#">{{page.author.name}}</a><br> <span>Published in <a href="#">{{page.author.in}}</a> {{page.author.date}}</span></p>
                     </div>
                 </div>
