@@ -126,10 +126,13 @@ header {
 /*** Banner ***/
 .head-section {
     color: rgba(255,255,255,.9);
-    margin-bottom: 14rem;
+    margin-bottom: 10rem;
+    position: relative;
+    overflow: hidden;
 }
 .banner-section {
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
 }
 .banner-section .announcement {
     background: #0e1e25;
@@ -173,7 +176,7 @@ header {
     font-weight: 600;
 }
 .banner-img {
-    background-image: url(../images/laptop.jpg);
+    background-image: url(https://lh3.googleusercontent.com/PmfvI_NjuJh2F9xkGAKHxsF7MWKpQrfaHkgQh7TygcqdUuEWFAmWsO0e1q5IV4DrMy2cbPO8a9a-73M6dzU64lt2u5o);
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: scroll;
@@ -185,7 +188,13 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 0;
+}
+.image-right-bg img {
+    position: absolute;
+    width: 45%;
+    top: 8%;
+    right: 0;
 }
 
 /*** Sections ***/

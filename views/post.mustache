@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html lang="en">
+  {{>head}}
+    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/single.css" rel="stylesheet">
+  </head>
+
+  <body>
+        <div class="head-section">
+            {{>header}}
+         </div>
+
+    <main>
+        <section class="post-section">
+            <div class="container post-container">
+                <p class="post-meta">• {{post.dateString}}</p>
+                <h1><strong>{{post.title}}</strong></h1>
+                <div>
+                    {{{post.text}}}
+                </div>
+
+                <div class="newsletter">
+                    <h5>Subscribe to the newsletter</h5>
+                    <p>Exploring the JAMstack, static sites, and the future of web development. Subscribe to our newsletter to make sure you don't miss anything.</p>
+                    <form>
+                        <input class="form-control news-input" type="text" placeholder="Email address">
+                        <button class="btn get-started"><span>Subscribe</span></button>
+                    </form>
+                </div>
+            </div>
+            
+    </main>
+
+    {{>footer}}
+
+    {{>scripts}}
+  </body>
+</html>

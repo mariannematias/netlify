@@ -1,19 +1,8 @@
 
 <!doctype html>
   <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>{{page.name}}</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    {{>head}}
     <link href="css/products.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 
   <body>
@@ -24,9 +13,9 @@
   <main>
       <section class="page-title">
           <div class="container align-center">
-              <h1 class="title-head">{{page.head.title}}</h1>
-              <p class="title-desc">{{page.head.desc}}</p>
-              <p class="banner-btn align-center"><button class="btn get-started"  style="background-color: {{page.head.button.color}}"><span>{{page.head.button.text}}</span></button></p>
+              <h1 class="title-head">{{page.head_section.title}}</h1>
+              <p class="title-desc">{{page.head_section.desc}}</p>
+              <p class="banner-btn align-center"><button class="btn get-started"  style="background-color: {{page.head_section.button.color}}"><span>{{page.head_section.button.text}}</span></button></p>
           </div>
       </section>
 
@@ -35,24 +24,24 @@
               <div class="list list-dev">
                 <div class="container">
                       <h1 class="title-head">{{page.section1.list1.title}}<span>BETA</span></h1>
-                      <p class="title-sub">{{page.section1.list1.desc}}<br>{{page.section1.list1.desc2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list1.link.color}}">{{page.section1.list1.link.text}}</a> →</p>
+                      <p class="title-sub">{{page.section1.list1.subtitle}}<br>{{page.section1.list1.subtitle2}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section1.list1.link.color}}">{{page.section1.list1.link.text}}</a></p>
                 </div>
               </div>
 
               <div class="list list-build">
                   <div class="container">
                       <h1 class="title-head">{{page.section1.list2.title}}</h1>
-                      <p class="title-sub">{{page.section1.list2.desc}}<br>{{page.section1.list2.desc2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list2.link.color}}">{{page.section1.list2.link.text}}</a> →</p>
+                      <p class="title-sub">{{page.section1.list2.subtitle}}<br>{{page.section1.list2.subtitle2}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section1.list2.link.color}}">{{page.section1.list2.link.text}}</a></p>
                   </div>
               </div>
 
               <div class="list list-edge">
                   <div class="container">
                       <h1 class="title-head">{{page.section1.list3.title}}</h1>
-                      <p class="title-sub">{{page.section1.list3.desc}}<br>{{page.section1.list3.desc2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list3.link.color}}">{{page.section1.list3.link.text}}</a> →</p>
+                      <p class="title-sub">{{page.section1.list3.subtitle}}<br>{{page.section1.list3.subtitle2}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section1.list3.link.color}}">{{page.section1.list3.link.text}}</a></p>
                   </div>
               </div>
           </div>
@@ -61,20 +50,54 @@
       <section class="add-ons">
           <div class="container">
                 <h2 class="align-center"><strong>{{page.section2.title}}</strong></h2>
-                <p class="title-desc">{{page.section2.desc}}</p>
-                {{#page.section2.lists}}
-                    <div class="row add-list">
-                        <div class="col-md-7 col-sm-12 content">
-                            <h3><img src="{{{img-icon}}}"><strong>{{title}}</strong></h3>
-                            <p class="subtitle">{{subtitle}}</p>
-                            <p class="desc">{{desc}}</p>
-                            <p class="href"><a href="#">{{link}}</a> →</p>
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <p><img class="img-icon" src="{{{img}}}"></p>
-                        </div>
+                <p class="title-desc">{{page.section2.description}}</p>
+                <div class="row add-list">
+                    <div class="col-md-7 col-sm-12 content">
+                        <h3><img src="{{{page.section2.lists.list1.img-icon}}}"><strong>{{page.section2.lists.list1.title}}</strong></h3>
+                        <p class="subtitle">{{page.section2.lists.list1.subtitle}}</p>
+                        <p class="desc">{{page.section2.lists.list1.desc}}</p>
+                        <p class="href"><a href="#">{{page.section2.lists.list1.link_text}}</a></p>
                     </div>
-                {{/page.section2.lists}}
+                    <div class="col-md-5 col-sm-12">
+                        <p><img class="img-icon" src="{{{page.section2.lists.list1.img_list}}}"/></p>
+                    </div>
+                </div>
+
+                <div class="row add-list">
+                    <div class="col-md-7 col-sm-12 content">
+                        <h3><img src="{{{page.section2.lists.list2.img-icon}}}"><strong>{{page.section2.lists.list2.title}}</strong></h3>
+                        <p class="subtitle">{{page.section2.lists.list2.subtitle}}</p>
+                        <p class="desc">{{page.section2.lists.list2.desc}}</p>
+                        <p class="href"><a href="#">{{page.section2.lists.list2.link_text}}</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <p><img class="img-icon" src="{{{page.section2.lists.list2.img_list}}}"/></p>
+                    </div>
+                </div>
+
+                <div class="row add-list">
+                    <div class="col-md-7 col-sm-12 content">
+                        <h3><img src="{{{page.section2.lists.list3.img-icon}}}"><strong>{{page.section2.lists.list3.title}}</strong></h3>
+                        <p class="subtitle">{{page.section2.lists.list3.subtitle}}</p>
+                        <p class="desc">{{page.section2.lists.list3.desc}}</p>
+                        <p class="href"><a href="#">{{page.section2.lists.list3.link_text}}</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <p><img class="img-icon" src="{{{page.section2.lists.list3.img_list}}}"/></p>
+                    </div>
+                </div>
+
+                <div class="row add-list">
+                    <div class="col-md-7 col-sm-12 content">
+                        <h3><img src="{{{page.section2.lists.list4.img-icon}}}"><strong>{{page.section2.lists.list4.title}}</strong></h3>
+                        <p class="subtitle">{{page.section2.lists.list4.subtitle}}</p>
+                        <p class="desc">{{page.section2.lists.list4.desc}}</p>
+                        <p class="href"><a href="#">{{page.section2.lists.list4.link_text}}</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <p><img class="img-icon" src="{{{page.section2.lists.list4.img_list}}}"/></p>
+                    </div>
+                </div>
           </div>
       </section>
 
@@ -83,8 +106,8 @@
               <div class="row">
                   <div class="col-md-8 col-sm-12">
                       <h2 class="title-head2"><strong>{{page.section3.title}}</strong></h2>
-                      <p class="title-desc">{{page.section3.desc}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section3.link.color}}">{{page.section3.link.text}}</a> →</p>
+                      <p class="title-desc">{{page.section3.description}}</p>
+                      <p class="learn"><a href="#" style="color:{{page.section3.link.color}}">{{page.section3.link.text}}</a></p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                       <div class="check-list">
@@ -102,7 +125,7 @@
       <section class="simple">
           <div class="container">
                 <h2 class="align-center"><strong>{{page.section4.title}}</strong></h2>
-                <p class="title-desc align-center">{{page.section4.desc}}</p>
+                <p class="title-desc align-center">{{page.section4.description}}</p>
                 <div class="container-list">
                     <div class="row simple-list">
                         <div class="col-md-9 col-sm-12 order-md-2 pad-top">
@@ -110,7 +133,7 @@
                             <p>{{page.section4.lists.list1.desc}}</p>
                         </div>
                         <div class="col-md-3 col-sm-12 order-md-1">
-                            <img src="{{{page.section4.lists.list1.img}}}">
+                            <img src="{{{page.section4.lists.list1.img_list}}}"/>
                         </div>
                     </div>
                     <div class="row simple-list">
@@ -119,7 +142,7 @@
                             <p>{{page.section4.lists.list2.desc}}</p>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                            <img src="{{{page.section4.lists.list2.img}}}">
+                            <img src="{{{page.section4.lists.list2.img_list}}}"/>
                         </div>
                     </div>
                     <div class="row simple-list">
@@ -128,7 +151,7 @@
                             <p>{{page.section4.lists.list3.desc}}</p>
                         </div>
                         <div class="col-md-3 order-md-1 col-sm-12">
-                            <img src="{{{page.section4.lists.list3.img}}}">
+                            <img src="{{{page.section4.lists.list3.img_list}}}"/>
                         </div>
                     </div>
                     <div class="row simple-list">
@@ -137,7 +160,7 @@
                             <p>{{page.section4.lists.list4.desc}}</p>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                            <img src="{{{page.section4.lists.list4.img}}}">
+                            <img src="{{{page.section4.lists.list4.img_list}}}"/>
                         </div>
                     </div>
                     <div class="row simple-list">
@@ -146,7 +169,7 @@
                             <p>{{page.section4.lists.list5.desc}}</p>
                         </div>
                         <div class="col-md-3 order-md-1 col-sm-12">
-                            <img src="{{{page.section4.lists.list5.img}}}">
+                            <img src="{{{page.section4.lists.list5.img_list}}}"/>
                         </div>
                     </div>
                 </div>
@@ -158,7 +181,7 @@
               <div class="row">
                   <div class="col-md-8 col-sm-12  order-md-2 right">
                       <h2 class="title-head3"><strong>{{page.section5.title}}</strong></h2>
-                      <p class="title-desc">{{page.section5.desc}}</p>
+                      <p class="title-desc">{{page.section5.description}}</p>
                       <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.section5.link.color}}"><span>{{page.section5.link.text}}</span></button></p>
                   </div>
                   <div class="col-md-4 col-sm-12 order-md-1">
@@ -178,7 +201,7 @@
           <div class="container align-center">
               <h2 class="title-head2"><strong>{{page.section6.title}}</strong></h2>
               <p class="title-desc">{{page.section6.desc}}</p>
-              <p class="learn"><a href="#" style="color:{{page.section6.link.color}}">{{page.section6.link.text}}</a> →</p>
+              <p class="learn"><a href="#" style="color:{{page.section6.link.color}}">{{page.section6.link.text}}</a></p>
               <ul class="icon-list">
                   {{#page.section6.icons}}
                       <li><img src="{{{img}}}"></li>
@@ -191,8 +214,6 @@
 
   {{>footer}}
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/custom.js"></script>
+  {{>scripts}}
   </body>
 </html>

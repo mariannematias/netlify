@@ -4,19 +4,8 @@
             <p class="align-center footer-logo"><img class="logo" src="{{{global.logo}}}"></p>
             <div class="footer-nav">
                 <ul class="nav-list">
-                    {{#global.footer.footer-links.link1}}
-                        <li><a href="#">{{text}}</a></li>
-                    {{/global.footer.footer-links.link1}}
-                </ul>
-                <ul class="nav-list">
-                    {{#global.footer.footer-links.link2}}
-                        <li><a href="#">{{text}}</a></li>
-                    {{/global.footer.footer-links.link2}}
-                </ul>
-                <ul class="nav-list">
-                    {{#global.footer.footer-links.link3}}
-                        <li><a href="#">{{text}}</a></li>
-                    {{/global.footer.footer-links.link3}}
+                    <li><a href="/products">{{global.footer.links.products.text}}</a></li>
+                    <li><a href="/blog">{{global.footer.links.blog.text}}</a></li>
                 </ul>
             </div>
             <div class="footer-social">
@@ -27,9 +16,9 @@
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
                 <ul class="links">
-                    {{#global.footer.footer-links.link4}}
+                    {{#global.footer.links2}}
                         <li><a href="#">{{text}}</a></li>
-                    {{/global.footer.footer-links.link4}}
+                    {{/global.footer.links2}}
                 </ul>
                 <p class="copyright">{{global.footer.copyright}}</p>
             </div>

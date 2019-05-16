@@ -1,47 +1,113 @@
-// Full Documentation - https://www.turbo360.co/docs
-const turbo = require('turbo360')({site_id: process.env.TURBO_APP_ID})
+// Full Documentation - https://docs.turbo360.co/
 const vertex = require('vertex360')({site_id: process.env.TURBO_APP_ID})
+const turbo = require('turbo360')({site_id: process.env.TURBO_APP_ID})
 const router = vertex.router()
-const home = require('../pages/home.json')
-const blog = require('../pages/blog.json')
-const single = require('../pages/single.json')
-const products = require('../pages/products.json')
-const global = require('../pages/global.json')
+const controllers = require('../controllers')
 
-/*  This is the home route. It renders the index.mustache page from the views directory.
-	Data is rendered using the Mustache templating engine. For more
-	information, view here: https://mustache.github.io/#demo */
+const CDN = (process.env.TURBO_ENV=='dev') ? null : process.env.CDN
+
 router.get('/', (req, res) => {
-	const data = {
-		page: home,
-		global: global
-	}
-	res.render('index', data)
-})
-
-router.get('/blog', (req, res) => {
-	const data = {
-		page: blog,
-		global: global
-	}
-	res.render('blog', data)
-})
-
-router.get('/single', (req, res) => {
-	const data = {
-		page: single,
-		global: global
-	}
-	res.render('single', data)
+	const data = {cdn: CDN}
+	turbo.pageConfig('home', process.env.TURBO_API_KEY, process.env.TURBO_ENV)
+	.then(homeConfig => {
+		data['page'] = homeConfig
+		let ctr = new controllers.post()
+		return ctr.get()
+	})
+	.then(posts => {
+		data['posts'] = posts
+		return turbo.currentApp(process.env.TURBO_ENV)
+	})
+	.then(site => {
+		data['site'] = site
+		data['global'] = site.globalConfig
+		res.render('home', data)
+	})
+	.catch(err => {
+		res.json({
+			confirmation: 'fail',
+			message: err.message
+		})
+	})
 })
 
 router.get('/products', (req, res) => {
-	const data = {
-		page: products,
-		global: global
-	}
-	res.render('products', data)
+	const data = {cdn: CDN}
+	turbo.pageConfig('products', process.env.TURBO_API_KEY, process.env.TURBO_ENV)
+	.then(productsConfig => {
+		data['page'] = productsConfig
+		let ctr = new controllers.post()
+		return ctr.get()
+	})
+	.then(posts => {
+		data['posts'] = posts
+		return turbo.currentApp(process.env.TURBO_ENV)
+	})
+	.then(site => {
+		data['site'] = site
+		data['global'] = site.globalConfig
+		res.render('products', data)
+	})
+	.catch(err => {
+		res.json({
+			confirmation: 'fail',
+			message: err.message
+		})
+	})
 })
 
+router.get('/blog', (req, res) => {
+	const data = {cdn: CDN}
+	turbo.pageConfig('blog', process.env.TURBO_API_KEY, process.env.TURBO_ENV)
+	.then(blogConfig => {
+		data['page'] = blogConfig
+		let ctr = new controllers.post()
+		return ctr.get()
+	})
+	.then(posts => {
+		data['posts'] = posts
+		data['post'] = posts[0]
+		data['post1'] = posts[1]
+		data['post2'] = posts[2]
+		return turbo.currentApp(process.env.TURBO_ENV)
+	})
+	.then(site => {
+		data['site'] = site
+		data['global'] = site.globalConfig
+		res.render('blog', data)
+	})
+	.catch(err => {
+		res.json({
+			confirmation: 'fail',
+			message: err.message
+		})
+	})
+})
+
+router.get('/post/:slug', (req, res) => {
+	const data = {cdn: CDN}
+	let ctr = new controllers.post()
+	ctr.get({slug:req.params.slug})
+	.then(posts => {
+		if (posts.length == 0){
+			throw new Error('Post '+req.params.slug+' not found.')
+			return
+		}
+
+		data['post'] = posts[0]
+		return turbo.currentApp(process.env.TURBO_ENV)
+	})
+	.then(site => {
+		data['site'] = site
+		data['global'] = site.globalConfig
+		res.render('post', data)
+	})
+	.catch(err => {
+		res.json({
+			confirmation: 'fail',
+			message: err.message
+		})
+	})
+})
 
 module.exports = router

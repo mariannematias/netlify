@@ -1,0 +1,42 @@
+{ 
+  "newsletter": {
+    "title": "Subscribe to the newsletter",
+    "desc": "Exploring the JAMstack, static sites, and the future of web development. Subscribe to our newsletter to make sure you don't miss anything.",
+    "btn-text": "Subscribe"
+  },
+  "hero": {
+    "title": "Build, deploy, and manage modern web projects",
+    "subtitle": "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.",
+    "button": {
+      "color": "#00ad9f",
+      "text": "Join now for free"
+    }
+  },
+  "next": {
+    "post1": {
+      "title": "Deploy CodeSandbox to Netlify",
+      "desc": "Announcing the CodeSandbox Netlify integration. Create and deploy sites to Netlify directly from within CodeSandbox!",
+      "name": "David Wells",
+      "in": "News & Announcements",
+      "date": "March 26, 2019"
+    },
+    "post2": {
+      "title": "Featured site: Gridsome",
+      "desc": "A static site generator for the VueJS community. With a pre-generated site hosted on Netlify and optimised for performance.",
+      "name": "Phil Hawksworth",
+      "in": "Featured Sites",
+      "date": "February 20, 2019"
+    }
+  },
+  "footer": {
+    "title": "Ready to try Netlify?",
+    "subtitle": "Deploy a site in 30 seconds.",
+    "copyright": "Netlify © 2019",
+    "footer-links": {
+      "link1": [{ "text": "Products" }, { "text": "Pricing" }, { "text": "Docs" }, { "text": "Blog" }],
+      "link2": [{ "text": "About" }, { "text": "Careers" }, { "text": "Press" }, { "text": "Open Source" }],
+      "link3": [{ "text": "Sales" }, { "text": "Status" }, { "text": "Support" }, { "text": "Community" }],
+      "link4": [{ "text": "Terms" }, { "text": "Privacy" }, { "text": "GDPR" }]
+    }
+  }
+}

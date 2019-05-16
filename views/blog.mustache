@@ -1,19 +1,8 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>{{page.name}}</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  {{>head}}
+    <link href="/css/blog.css" rel="stylesheet">
   </head>
 
   <body>
@@ -21,8 +10,8 @@
         {{>header}}
         <section class="banner-section">
             <div class="container">
-                <h1 class="banner-title">{{page.hero.title}}</h1>
-                <p class="banner-sub">{{page.hero.subtitle}} <a href="#">{{page.hero.subtitle-a}}</a>{{page.hero.subtitle2}}</p>
+                <h1 class="banner-title">{{page.hero_section.title}}</h1>
+                <p class="banner-sub">{{page.hero_section.subtitle}}</p>
             </div>
         </section>
       </div>
@@ -33,39 +22,37 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-12">
                         <h2>{{page.all-posts.title}}</h2>
-                        {{#page.all-posts.posts}}
+                        {{#posts}}
                         <div class="post-box">
-                            <h4><a href="{{link}}">{{title}}</a></h4>
-                            <p>{{desc}}</p>
-                            <p>By <a href="#">{{author.name}}</a> in <a href="#">{{author.in}}</a> • {{date}}</p>
+                            <h4><a href="/post/{{slug}}">{{title}}</a></h4>
+                            <p>{{preview}}</p>
+                            <p>• {{dateString}}</p>
                         </div>
-                        {{/page.all-posts.posts}}
+                        {{/posts}}
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="newsletter side-section">
                             <h5>{{page.newsletter.title}}</h5>
-                            <p>{{page.newsletter.desc}}</p>
+                            <p>{{page.newsletter.subtitle}}</p>
                             <form>
                                 <input class="form-control news-input" type="text" placeholder="Email address">
                             </form>
-                            <p class="banner-btn"><button class="btn get-started"><span>{{page.newsletter.btn-text}}</span></button></p>
+                            <p class="banner-btn"><button class="btn get-started"><span>{{page.newsletter.btn_text}}</span></button></p>
                         </div>
                         <div class="popular side-section">
-                            <h5>{{page.popular.title}}</h5>
-                            {{#page.popular.posts}}
-                                <div class="post">
-                                    <h4><a href="#">{{title}}</a></h4>
-                                    <p>{{date}}</p>
-                                </div>
-                            {{/page.popular.posts}}
-                        </div>
-                        <div class="categories side-section">
-                            <h5>{{page.categories.title}}</h5>
-                            <ul>
-                                {{#page.categories.list}}
-                                    <li><a href="#">{{text}}</a></li>
-                                {{/page.categories.list}}
-                            </ul>
+                            <h5>{{page.latest_posts.title}}</h5>
+                            <div class="post">
+                                <h4><a href="/post/{{post.slug}}">{{post.title}}</a></h4>
+                                <p>{{post.dateString}}</p>
+                            </div>
+                            <div class="post">
+                                <h4><a href="/post/{{post1.slug}}">{{post1.title}}</a></h4>
+                                <p>{{post1.dateString}}</p>
+                            </div>
+                            <div class="post">
+                                <h4><a href="/post/{{post2.slug}}">{{post2.title}}</a></h4>
+                                <p>{{post2.dateString}}</p>
+                            </div>
                         </div>
                         <div class="contribute side-section">
                             <h5>{{page.contribute.title}}</h5>
@@ -92,8 +79,6 @@
 
     {{>footer}}
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+    {{>scripts}}
   </body>
 </html>

@@ -5,24 +5,14 @@
                 <i class="toggle fas fa-bars"></i>
             </button>
             <a class="navbar-brand" href="/">
-                <img class="logo" src="{{{global.logo}}}" class="d-inline-block align-top" alt="">
-                <span>{{global.name}}</span>
+                <img class="logo" src="{{{global.logo}}}" class="d-inline-block align-top" alt=""/>
+                <span>{{global.site_name}}</span>
             </a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    {{#global.head-nav}}
-                        <a class="nav-item nav-link active" href="{{link}}">{{text}}</a>
-                    {{/global.head-nav}}
-                    <a class="nav-item nav-link nav-search" href="#"><i class="fas fa-search"></i></a>
-                </div>
-                <form class="form-inline">
-                    <input class="form-control search-input" type="search" placeholder="Search..." aria-label="Search">
-                </form>
-                <div class="ml-auto head-nav2">
-                    {{#global.head-nav2}}
-                        <a href="#">{{text}}</a>
-                    {{/global.head-nav2}}
-                </div>                        
+                    <a class="nav-item nav-link active" href="/products">{{global.navbar.products.text}}</a>
+                    <a class="nav-item nav-link active" href="/blog">{{global.navbar.blog.text}}</a>
+                </div>               
             </div>
         </div>
     </nav> 

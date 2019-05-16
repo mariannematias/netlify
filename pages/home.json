@@ -1,105 +1,112 @@
 { 
-  "hero": {
+  "hero_section": {
     "title": "Build, deploy, and manage modern web projects",
     "subtitle": "An all-in-one workflow that combines global deployment, continuous integration, and automatic HTTPS. And that’s just the beginning.",
     "button": {
-      "color": "#00ad9f",
+      "color": "mediumseagreen",
       "text": "Join now for free"
     },
-    "hero-img": "/images/laptop.jpg"
+    "hero_bg_color": "#2E545F",
+    "img_bg": "https://lh3.googleusercontent.com/Cx6qc2HMTj6PKfucf9DzaIIurIDG6QNZ873p_IsxiEkjJyuCu8is8JAGzXECr4W6uB3EO1iWQoEkfdapZA44MSoyAw"
   },
-  "section-1": {
+  "section1": {
     "title": "Deploy your site in seconds",
-    "steps": [
-      {
-          "class": "col-md-4 col-sm-12 step step-1",
-          "title": "Connect your repository",
-          "img": "images/deploy2.png"
+    "steps": {
+      "step1": {
+        "title": "Connect your repository",
+        "img_icon": "https://lh3.googleusercontent.com/5eMZ7pIH5GmmFCAXbqdzWgF_UNIoOqBg1EiESWu1nbtM1MHQd9X6C-vJL2Sd_YFnno6p4OCHaVYno5KjD4_SOCJ8"
       },
-      {
-        "class": "col-md-4 col-sm-12 step step-2",
+      "step2": {
         "title": "Add your build settings",
-        "img": "images/deploy3.png"
+        "img_icon": "https://lh3.googleusercontent.com/2gZ2uQLUNkQD9MOXeFjk_lC6RfpHMIeap9E5cD-lEJYRDXsb0P2xtaQvg56En3znM1iNSziI-VTYe8SQp6DI0000Dw"
       },
-      {
-        "class": "col-md-4 col-sm-12 step step-3",
+      "step3": {
         "title": "Deploy your website",
-        "img": "images/deploy1.png"
+        "img_icon": "https://lh3.googleusercontent.com/JqhsWRHkSK02WtaGoaJcZWSTL6OBXvFw65rE0ANQJCmwsS4S9gvTnLGfilNVwqNcnHBeH90YUWlKWGFzdTJzCzMpN7E"
       }
-    ],
+    },
     "subtitle": "*Nope, no gotcha here.",
-    "subtitle2": "It just takes a few clicks."
+    "subtitle2": "It just takes a few clicks.",
+    "button": {
+      "color": "mediumseagreen",
+      "text": "Join now for free"
+    }
   },
-  "section-2": {
+  "section2": {
     "title": "Go beyond static",
     "lists": {
       "list1": {
-        "img": "images/img1.jpg",
+        "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "Nail the fundamentals with rock-solid deployment",
         "subtitle": "Deploy to a redundant network of servers with built‑in continuous integration and HTTPS."
       },
       "list2": {
-        "img": "images/img3.jpg",
+        "img_list": "https://lh3.googleusercontent.com/z_v1V-Pv9LekQCpF5ic8368UEorYHk1f-ZFGo_2InjqKoj16t515Uz_vTHcT8zWn9nVP59OcSzVmaDmnIglGw2pGQOA",
         "title": "Add dynamic functionality with built‑in applications",
         "subtitle": "Manage user identity, HTML forms, and even AWS Lambda functions with ease."
       },
       "list3": {
-        "img": "images/img2.jpg",
+        "img_list": "https://lh3.googleusercontent.com/xZDtnLajar0pq0A1NLN-ao8yrfehQ1HCtLJEwWSTtq8cOf8yu7p2lz6CoW3JXKQmDt3ZAyqpo3jf6DNi8sG1d51xEw",
         "title": "Customize your projects with your own build tools or microservices",
         "subtitle": "Use your favorite tools for search, payments, commenting, or content management."
       }
     }
   },
-  "section-3": {
+  "section3": {
     "title": "There’s a better way to deploy web projects",
-    "lists": [
-      {
-          "img": "images/deploy4-c.png",
-          "title": "A single, simplified workflow",
-          "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
+    "lists": {
+      "list1": {
+        "img_list": "images/deploy4-c.png",
+        "title": "A single, simplified workflow",
+        "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
       },
-      {
-        "img": "images/deploy4-b.png",
+      "list2": {
+        "img_list": "images/deploy4-b.png",
         "title": "Performance from the ground up",
         "subtitle": "Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure."
       },
-      {
-        "img": "images/deploy4-a.png",
+      "list3": {
+        "img_list": "images/deploy4-a.png",
         "title": "Don’t stop at static",
         "subtitle": "Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
       }
-    ],
-    "subtitle": "See plans and pricing"
+    },
+    "button": {
+      "color": "mediumseagreen",
+      "text": "Join now for free"
+    },
+    "link_text": "See plans and pricing"
   },
-  "section-4": {
+  "section4": {
     "title": "More than 500,000 developers trust Netlify",
     "img": "images/logos.png",
     "clients": {
       "client1": {
-        "desc-a": "Vuejs.org",
-        "desc": "is now powered by ",
-        "desc-a1": "@Netlify",
-        "desc2": "with a free open source team plan. Really really impressive and smooth deployment experience.",
-        "img": "images/2.png",
+        "description": "Vuejs.org is now powered by @Netlify with a free open source team plan. Really really impressive and smooth deployment experience.",
+        "img_client": "images/2.png",
         "name": "Evan You",
         "social": "@youyuxi"
       },
       "client2": {
-        "desc": "Haven’t been as impressed by a software product as I am with ",
-        "desc-a": "@Netlify",
-        "desc2": "in a long time. Huge time saver, works as promised. Neat stuff, folks.",
-        "img": "images/3.png",
+        "description": "Haven’t been as impressed by a software product as I am with @Netlify in a long time. Huge time saver, works as promised. Neat stuff, folks.",
+        "img_client": "images/3.png",
         "name": "Chance Griffin",
         "social": "@cbgriffin"
       },
       "client3": {
-        "desc": "I think ",
-        "desc-a": "@Netlify",
-        "desc2": "might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
-        "img": "images/4.png",
+        "description": "I think @Netlify might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
+        "img_client": "images/4.png",
         "name": "Emma Barnes #FBPE",
         "social": "@has_many_books"
       }
+    }
+  },
+  "section5": {
+    "title": "Ready to try Netlify?",
+    "subtitle": "Deploy a site in 30 seconds.",
+    "button": {
+      "color": "mediumseagreen",
+      "text": "Join now for free"
     }
   }
 }

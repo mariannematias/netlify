@@ -1,17 +1,24 @@
 { 
-  "name": "Netlify",
-  "logo": "images/dummy-logo.png",
-  "head-nav": [{ "text": "Products", "link": "/products" }, { "text": "Pricing", "link": "#" }, { "text": "Docs", "link": "#" }, { "text": "Blog", "link": "/blog" }],
-  "head-nav2": [{ "text": "Contact Sales" }, { "text": "Login" }, { "text": "Sign Up →" }],
-  "footer": {
-    "title": "Ready to try Netlify?",
-    "subtitle": "Deploy a site in 30 seconds.",
-    "copyright": "Netlify © 2019",
-    "footer-links": {
-      "link1": [{ "text": "Products" }, { "text": "Pricing" }, { "text": "Docs" }, { "text": "Blog" }],
-      "link2": [{ "text": "About" }, { "text": "Careers" }, { "text": "Press" }, { "text": "Open Source" }],
-      "link3": [{ "text": "Sales" }, { "text": "Status" }, { "text": "Support" }, { "text": "Community" }],
-      "link4": [{ "text": "Terms" }, { "text": "Privacy" }, { "text": "GDPR" }]
+  "site_name": "Netlify",
+  "logo": "https://lh3.googleusercontent.com/LsO-0Xx-0ecXrYJ8nCo1n8cxlpktk1m1RAaLNdmVgM4uegM0hBAOKOhWa6Wy39bFSmD6CzgaqOYM1Wh0j2yoGdtl5Q",
+  "navbar": {
+    "products": {
+      "text": "Products"
+    },
+    "blog": {
+      "text": "Blog"
     }
+  },
+  "footer": {
+    "copyright": "Netlify © 2019",
+    "links": {
+      "products": {
+        "text": "Products" 
+      }, 
+      "blog": {
+        "text": "Blog" 
+      }
+    },
+    "links2": [{ "text": "Terms" }, { "text": "Privacy" }, { "text": "GDPR" }]
   }
 }
