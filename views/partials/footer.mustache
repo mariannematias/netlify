@@ -1,11 +1,16 @@
 <footer>
     <div class="container align-center">        
         <div class="footer-links">
-            <p class="align-center footer-logo"><img class="logo" src="{{{global.logo}}}"></p>
+            <p class="align-center footer-logo"><img class="logo" src="{{{global.img_logo}}}"/></p>
             <div class="footer-nav">
                 <ul class="nav-list">
-                    <li><a href="/products">{{global.footer.links.products.text}}</a></li>
-                    <li><a href="/blog">{{global.footer.links.blog.text}}</a></li>
+                    {{#global.footer.links.products.show_or_hide}}
+                        <li><a href="/products">{{global.footer.links.products.text}}</a></li>
+                    {{/global.footer.links.products.show_or_hide}}
+
+                    {{#global.footer.links.blog.show_or_hide}}
+                        <li><a href="/blog">{{global.footer.links.blog.text}}</a></li>
+                    {{/global.footer.links.blog.show_or_hide}}
                 </ul>
             </div>
             <div class="footer-social">
@@ -14,11 +19,6 @@
                     <li><a href="#"><i class="fab fa-github"></i></a></li>
                     <li><a href="#"><i class="fab fa-gitter"></i></a></li>
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-                <ul class="links">
-                    {{#global.footer.links2}}
-                        <li><a href="#">{{text}}</a></li>
-                    {{/global.footer.links2}}
                 </ul>
                 <p class="copyright">{{global.footer.copyright}}</p>
             </div>

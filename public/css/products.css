@@ -1,3 +1,6 @@
+.navbar-brand:hover {
+    color: #0e1e25;
+}
 .head-section {
     padding-bottom: 1rem;
     background: #fff;

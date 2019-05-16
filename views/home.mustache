@@ -11,7 +11,7 @@
             <div class="container">
                 <h1 class="banner-title">{{page.hero_section.title}}</h1>
                 <p class="banner-sub">{{page.hero_section.subtitle}}</p>
-                <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.hero_section.button.color}}"><span>{{page.hero_section.button.text}}</span></button></p>
+                <p class="banner-btn"><a href="#register" class="register-btn"><button class="btn get-started" style="background-color: {{page.hero_section.button.color}}"><span>{{page.hero_section.button.text}}</span></button></a></p>
             </div>
         </section>
         <div class="banner-img" style="background:{{page.hero_section.hero_bg_color}}"></div>
@@ -28,16 +28,16 @@
                         <p><img src="{{{page.section1.steps.step1.img_icon}}}"/></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-2">
-                        <h3 class="align-center">{{page.section2.steps.step1.title}}</h3>
+                        <h3 class="align-center">{{page.section1.steps.step2.title}}</h3>
                         <p><img src="{{{page.section1.steps.step2.img_icon}}}"/></p>
                     </div>
                     <div class="col-md-4 col-sm-12 step step-3">
-                        <h3 class="align-center">{{page.section3.steps.step1.title}}</h3>
+                        <h3 class="align-center">{{page.section1.steps.step3.title}}</h3>
                         <p><img src="{{{page.section1.steps.step3.img_icon}}}"/></p>
                     </div>
                 </div>
                 <p class="subtitle align-center">{{page.section1.subtitle}}<br>{{page.section1.subtitle2}}</p>
-                <p class="banner-btn align-center"><button class="btn get-started"  style="background-color: {{page.section1.button.color}}"><span>{{page.section1.button.text}}</span></button></p>
+                <p class="banner-btn align-center"><a href="#register" class="register-btn"><button class="btn get-started"  style="background-color: {{page.section1.button.color}}"><span>{{page.section1.button.text}}</span></button></a></p>
             </div>
         </section>
 
@@ -94,15 +94,14 @@
                         <p>{{page.section3.lists.list3.subtitle}}</p>
                     </div>
                 </div>
-                <p class="banner-btn align-center"><button class="btn get-started" style="background-color: {{page.section3.button.color}}"><span>{{page.section3.button.text}}</span></button></p>
-                <p class="align-center"><a href="#"><strong>{{page.section3.link_text}}</a></strong> →</p>
+                <p class="banner-btn align-center"><a href="#register" class="register-btn"><button class="btn get-started" style="background-color: {{page.section3.button.color}}"><span>{{page.section3.button.text}}</span></button></a></p>
             </div>
         </section>
 
         <section class="clients">
             <div class="container">
                 <h3 class="align-center">{{page.section4.title}}</h3>
-                <p class="align-center client-logo"><img src="{{{page.section4.img}}}"></p>
+                <p class="align-center client-logo"><img src="{{{page.section4.img_logos}}}=s1080"/></p>
             </div>
             <div class="container-fluid">
                 <div class="row">
@@ -143,10 +142,22 @@
             </div>
         </section>
 
-        <section class="ready">
+        <section class="ready" id="register">
             <div class="container align-center">
                 <h2><strong>{{page.section5.title}}</strong></h2>
                 <p class="footer-sub">{{page.section5.subtitle}}</p>
+                <div class="register row">
+                    <form id="edd_register_form" class="edd_form" action="" method="post">
+                        <fieldset>
+                            <p>
+                                <input id="edd-user-login" class="required edd-input" type="text" name="edd_user_login" placeholder="USERNAME">
+                            </p>
+                            <p>
+                                <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" placeholder="EMAIL">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
                 <p class="banner-btn align-center"><button class="btn get-started" style="background-color: {{page.section5.button.color}}"><span>{{page.section5.button.text}}</span></button></p>
             </div>
         </section>
@@ -155,6 +166,8 @@
 
     {{>footer}}
 
+    <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
+    <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
     {{>scripts}}
   </body>
 </html>

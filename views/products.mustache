@@ -15,7 +15,7 @@
           <div class="container align-center">
               <h1 class="title-head">{{page.head_section.title}}</h1>
               <p class="title-desc">{{page.head_section.desc}}</p>
-              <p class="banner-btn align-center"><button class="btn get-started"  style="background-color: {{page.head_section.button.color}}"><span>{{page.head_section.button.text}}</span></button></p>
+              <p class="banner-btn align-center"><a href="#register" class="register-btn"><button class="btn get-started"  style="background-color: {{page.head_section.button.color}}"><span>{{page.head_section.button.text}}</span></button></a></p>
           </div>
       </section>
 
@@ -25,7 +25,6 @@
                 <div class="container">
                       <h1 class="title-head">{{page.section1.list1.title}}<span>BETA</span></h1>
                       <p class="title-sub">{{page.section1.list1.subtitle}}<br>{{page.section1.list1.subtitle2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list1.link.color}}">{{page.section1.list1.link.text}}</a></p>
                 </div>
               </div>
 
@@ -33,7 +32,6 @@
                   <div class="container">
                       <h1 class="title-head">{{page.section1.list2.title}}</h1>
                       <p class="title-sub">{{page.section1.list2.subtitle}}<br>{{page.section1.list2.subtitle2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list2.link.color}}">{{page.section1.list2.link.text}}</a></p>
                   </div>
               </div>
 
@@ -41,7 +39,6 @@
                   <div class="container">
                       <h1 class="title-head">{{page.section1.list3.title}}</h1>
                       <p class="title-sub">{{page.section1.list3.subtitle}}<br>{{page.section1.list3.subtitle2}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section1.list3.link.color}}">{{page.section1.list3.link.text}}</a></p>
                   </div>
               </div>
           </div>
@@ -56,7 +53,6 @@
                         <h3><img src="{{{page.section2.lists.list1.img-icon}}}"><strong>{{page.section2.lists.list1.title}}</strong></h3>
                         <p class="subtitle">{{page.section2.lists.list1.subtitle}}</p>
                         <p class="desc">{{page.section2.lists.list1.desc}}</p>
-                        <p class="href"><a href="#">{{page.section2.lists.list1.link_text}}</a></p>
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <p><img class="img-icon" src="{{{page.section2.lists.list1.img_list}}}"/></p>
@@ -68,7 +64,6 @@
                         <h3><img src="{{{page.section2.lists.list2.img-icon}}}"><strong>{{page.section2.lists.list2.title}}</strong></h3>
                         <p class="subtitle">{{page.section2.lists.list2.subtitle}}</p>
                         <p class="desc">{{page.section2.lists.list2.desc}}</p>
-                        <p class="href"><a href="#">{{page.section2.lists.list2.link_text}}</a></p>
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <p><img class="img-icon" src="{{{page.section2.lists.list2.img_list}}}"/></p>
@@ -80,7 +75,6 @@
                         <h3><img src="{{{page.section2.lists.list3.img-icon}}}"><strong>{{page.section2.lists.list3.title}}</strong></h3>
                         <p class="subtitle">{{page.section2.lists.list3.subtitle}}</p>
                         <p class="desc">{{page.section2.lists.list3.desc}}</p>
-                        <p class="href"><a href="#">{{page.section2.lists.list3.link_text}}</a></p>
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <p><img class="img-icon" src="{{{page.section2.lists.list3.img_list}}}"/></p>
@@ -92,7 +86,6 @@
                         <h3><img src="{{{page.section2.lists.list4.img-icon}}}"><strong>{{page.section2.lists.list4.title}}</strong></h3>
                         <p class="subtitle">{{page.section2.lists.list4.subtitle}}</p>
                         <p class="desc">{{page.section2.lists.list4.desc}}</p>
-                        <p class="href"><a href="#">{{page.section2.lists.list4.link_text}}</a></p>
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <p><img class="img-icon" src="{{{page.section2.lists.list4.img_list}}}"/></p>
@@ -107,7 +100,6 @@
                   <div class="col-md-8 col-sm-12">
                       <h2 class="title-head2"><strong>{{page.section3.title}}</strong></h2>
                       <p class="title-desc">{{page.section3.description}}</p>
-                      <p class="learn"><a href="#" style="color:{{page.section3.link.color}}">{{page.section3.link.text}}</a></p>
                   </div>
                   <div class="col-md-4 col-sm-12">
                       <div class="check-list">
@@ -176,44 +168,32 @@
           </div>
       </section>
 
-      <section class="gray-box">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-8 col-sm-12  order-md-2 right">
-                      <h2 class="title-head3"><strong>{{page.section5.title}}</strong></h2>
-                      <p class="title-desc">{{page.section5.description}}</p>
-                      <p class="banner-btn"><button class="btn get-started" style="background-color: {{page.section5.link.color}}"><span>{{page.section5.link.text}}</span></button></p>
-                  </div>
-                  <div class="col-md-4 col-sm-12 order-md-1">
-                      <div class="check-list">
-                          <ul>
-                              {{#page.section5.checklist}}
-                                  <li><i class="fas fa-check-circle"></i>{{text}}</li>
-                              {{/page.section5.checklist}}
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section class="blue-box">
-          <div class="container align-center">
-              <h2 class="title-head2"><strong>{{page.section6.title}}</strong></h2>
-              <p class="title-desc">{{page.section6.desc}}</p>
-              <p class="learn"><a href="#" style="color:{{page.section6.link.color}}">{{page.section6.link.text}}</a></p>
-              <ul class="icon-list">
-                  {{#page.section6.icons}}
-                      <li><img src="{{{img}}}"></li>
-                  {{/page.section6.icons}}
-              </ul>
-          </div>
-      </section>
+      <section class="ready" id="register">
+            <div class="container align-center">
+                <h2><strong>{{page.section5.title}}</strong></h2>
+                <p class="footer-sub">{{page.section5.subtitle}}</p>
+                <div class="register row">
+                    <form id="edd_register_form" class="edd_form" action="" method="post">
+                        <fieldset>
+                            <p>
+                                <input id="edd-user-login" class="required edd-input" type="text" name="edd_user_login" placeholder="USERNAME">
+                            </p>
+                            <p>
+                                <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" placeholder="EMAIL">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+                <p class="banner-btn align-center"><button class="btn get-started" style="background-color: {{page.section5.button.color}}"><span>{{page.section5.button.text}}</span></button></p>
+            </div>
+        </section>
 
   </main>
 
   {{>footer}}
 
-  {{>scripts}}
+    <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
+    <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
+    {{>scripts}}
   </body>
 </html>

@@ -1,6 +1,6 @@
 { 
   "head_section": {
-    "title": "The Netlify Platform",
+    "title": "The Castly Platform",
     "desc": "Everything needed for modern web development from local setup, to global deployment",
     "button": {
         "color": "mediumseagreen",
@@ -9,31 +9,19 @@
   },
   "section1": {
     "list1": {
-      "title": "Netlify Dev",
+      "title": "Castly Dev",
       "subtitle": "Run our entire platform right on your laptop.",
-      "subtitle2": "Preview it all — site generation, functions, and edge logic.",
-      "link": {
-        "color": "mediumseagreen",
-        "text": "Learn more →"
-      }
+      "subtitle2": "Preview it all — site generation, functions, and edge logic."
     },
     "list2": {
-      "title": "Netlify Build",
+      "title": "Castly Build",
       "subtitle": "The Git workflow for web development.",
-      "subtitle2": "Build, deploy, and manage modern web projects.",
-      "link": {
-        "color": "white",
-        "text": "Learn more →"
-      }
+      "subtitle2": "Build, deploy, and manage modern web projects."
     },
     "list3": {
-      "title": "Netlify Edge",
+      "title": "Castly Edge",
       "subtitle": "A new type of application delivery network custom ",
-      "subtitle2": "designed for blazing fast sites and modern workflows.",
-      "link": {
-        "color": "white",
-        "text": "Learn more →"
-      }
+      "subtitle2": "designed for blazing fast sites and modern workflows."
     }
   },
   "section2": {
@@ -44,8 +32,7 @@
         "img-icon": "https://lh3.googleusercontent.com/Qpoj3Pr8LIMq3BsSdlriPhFNaCZSGoNUILt5CPVU7KisUSFNkkTZrW73WJm1XV8CBHsTiwelZu5bqKntKDhkHH6TfSg",
         "title": "Functions",
         "subtitle": "Deploy AWS Lambda functions without configuring API gateways, coordinating deployments, or setting up an AWS account.",
-        "desc": "Your functions are version-controlled, built, and deployed along with the rest of your Netlify site, and the Netlify API gateway automatically handles service discovery. Plus, your functions benefit from the power of Deploy Previews and rollbacks.",
-        "link_text": "Learn more →",
+        "desc": "Your functions are version-controlled, built, and deployed along with the rest of your Castly site, and the Castly API gateway automatically handles service discovery. Plus, your functions benefit from the power of Deploy Previews and rollbacks.",
         "img_list": "https://lh3.googleusercontent.com/NzxWeeKhla9ULxLWndLyuGM7bclNbDk0pPQcYeWSovtdyKF8bMFf17qM8TB31spZSrmbOUXIMcs2CyA7Xn20ydejh2M"
       },
       "list2": {
@@ -53,38 +40,31 @@
         "title": "Identity",
         "subtitle": "Manage signups, logins, password recovery, and more — all without rolling your own authentication service.",
         "desc": "Register and authenticate visitors to your site so you can gate content, enable CMS functionality, make authenticated calls to outside services, and more. Securely integrate with any service that understands JSON Web Tokens.",
-        "link_text": "Read the docs →",
         "img_list": "https://lh3.googleusercontent.com/-3WxVRYn9j5386Dxzrs5REVg2pi1mvlNaGAtRr-P9JGwHb0nU0xD60VKAhol9YxgNpXMXsEVJDEpAXFKRSBON3KLGw"
       },
       "list3": {
         "img-icon": "https://lh3.googleusercontent.com/Qpoj3Pr8LIMq3BsSdlriPhFNaCZSGoNUILt5CPVU7KisUSFNkkTZrW73WJm1XV8CBHsTiwelZu5bqKntKDhkHH6TfSg",
         "title": "Forms",
         "subtitle": "Manage forms and submissions without any server-side code or JavaScript.",
-        "desc": "Code an HTML form into any page on your site, add a netlify attribute to the <form> tag, and you’ll receive submissions in your Netlify dashboard. HTML files are parsed directly at deploy time, so there’s no need for you to make an API call or include extra JavaScript on your site.",
-        "link_text": "Read the docs →",
+        "desc": "Code an HTML form into any page on your site, add a Castly attribute to the <form> tag, and you’ll receive submissions in your Castly dashboard. HTML files are parsed directly at deploy time, so there’s no need for you to make an API call or include extra JavaScript on your site.",
         "img_list": "https://lh3.googleusercontent.com/-Pibt2gwWyG1pFkyX1WllHpFRy4uz5Ibt0vvEAJEzYM716d7gL8cF1wB4kkq6lLbiXosf92_3KGfuC27wqkgylwoHg"
       },
       "list4": {
         "img-icon": "https://lh3.googleusercontent.com/Qpoj3Pr8LIMq3BsSdlriPhFNaCZSGoNUILt5CPVU7KisUSFNkkTZrW73WJm1XV8CBHsTiwelZu5bqKntKDhkHH6TfSg",
         "title": "Large Media",
         "subtitle": "Manage binary files of any size right in your repo, just like code.",
-        "desc": "Netlify Large Media makes it easy to handle larger assets from the first Git check in through to final delivery. Version control files many gigabytes in size and dynamically resize images on the fly as they are served.",
-        "link_text": "Learn more →",
+        "desc": "Castly Large Media makes it easy to handle larger assets from the first Git check in through to final delivery. Version control files many gigabytes in size and dynamically resize images on the fly as they are served.",
         "img_list": "https://lh3.googleusercontent.com/HXCT-X5FkxaVuqjpkWPgM5JkqPQsZspeTy0Zelw7Ug3BFVGmNA-psYAG6asa5nWQ-X0__3ZTbHJnFoyMvDNHxE7Qd-M"
       }
     }
   },
   "section3": {
     "title": "Wow, right out of the box",
-    "description": "Whether you’re having a facepalm moment or you just need to ship your 404 page, Netlify’s automated workflow makes the hard stuff simple.",
-    "link": {
-      "color": "mediumseagreen",
-      "text": "See the workflow →"
-    },
+    "description": "Whether you’re having a facepalm moment or you just need to ship your 404 page, Castly’s automated workflow makes the hard stuff simple.",
     "checklist": [{"text": "Atomic deploys"}, {"text": "Cache invalidation"}, {"text": "Unlimited snapshots and rollbacks"}, {"text": "Custom headers"}, {"text": "Proxy and redirect rules"}, {"text": "DNS management"}]
   },
   "section4": {
-    "title": "Netlify makes it simple",
+    "title": "Castly makes it simple",
     "description": "You shouldn’t have to be an architecture expert to build and deploy a feature-rich site.",
     "lists": {
       "list1": {
@@ -95,12 +75,12 @@
       "list2": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "Automate deployment",
-        "desc": "Netlify’s built-in continuous deployment automatically runs your build commands and deploys the result whenever you push to your Git repository."
+        "desc": "Castly’s built-in continuous deployment automatically runs your build commands and deploys the result whenever you push to your Git repository."
       },
       "list3": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "Add a custom domain",
-        "desc": "Buy a custom domain through Netlify or add a domain you already own. Manage DNS zones and records using Netlify’s DNS hosting."
+        "desc": "Buy a custom domain through Castly or add a domain you already own. Manage DNS zones and records using Castly’s DNS hosting."
       },
       "list4": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
@@ -115,28 +95,11 @@
     }
   },
   "section5": {
-    "title": "Ready to put the robots to work?",
-    "description": "Take your site to the next level with sophisticated, API-driven functionality. We’ll take care of all the complicated server setup and integration.",
-    "link": {
-      "color": "#00ad9f",
+    "title": "Ready to try Castly?",
+    "subtitle": "Deploy a site in 30 seconds.",
+    "button": {
+      "color": "mediumseagreen",
       "text": "Join now for free"
-    },
-    "checklist": [{"text": "API/microservices gateway"}, {"text": "JWT-based access control"}, {"text": "Proxied authentication headers"}, {"text": "Stored environment variables"}, {"text": "Incoming and outgoing webhooks"}]
-  },
-  "section6": {
-    "title": "Bring your favorite tools",
-    "desc": "Whether you’re creating your own customizations, extending your workflow with open source projects, or integrating best-in-class microservices, Netlify’s highly-extensible APIs let you add as little or as much tooling as you need.",
-    "link": {
-      "color": "white",
-      "text": "See plans and pricing →"
-    },
-    "icons": [
-      {"img": "https://lh3.googleusercontent.com/bMGff-GNkNuAmr97aPI4xQH25x-9yur5RfA7QcFP8vHFJL-pVddW3IgqesL7OJ74AfQnv9HVv16P-VaiHJpbClg_WWA"}, 
-      {"img": "https://lh3.googleusercontent.com/3LdfY19t27f8-Xt9nc3ufnFp-AtGkOJskNDKC9mMCVD4sefAzE6lqscGjSz9tuyRFL1kpBuuiaGGxBF_pf1igL3_2w"}, 
-      {"img": "https://lh3.googleusercontent.com/WIJ9hgfkvnrTCmXvbjCSM8Z0EiUdpap0QtU7mlQJ5atAqG7BHrbYvi-UQh0OQAvt6QytDu_bYxM0y3cvQp6IGCXy"}, 
-      {"img": "https://lh3.googleusercontent.com/92ixpdAlTA_zYP3i9v5yVxJP9Cli3yDrzP2HqWa38YyqqKm3_MzKbCbDy58zYuuaVc-RN5CAbtDNpOARhnNBcapt"}, 
-      {"img": "https://lh3.googleusercontent.com/dQ-RsjNvpNA1ymSk1mScly2GxfV6gGom0wvmQw0MyudJ2ebf0vOe3AfOQ-wrvKHSQZcOab_A_Gaa6VPLo2hq9iqGPA"}, 
-      {"img": "https://lh3.googleusercontent.com/TIQza8p-pCMOAkYWkSYTgFjkbsVi9pdxgG1r_Hv8ei7tITqB9jfN0kknmJ0QVcRVVYiH-zlP0vDRRlQzIRLcRzMwTY0"}
-    ]
+    }
   }
 }

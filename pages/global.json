@@ -1,24 +1,27 @@
 { 
-  "site_name": "Netlify",
-  "logo": "https://lh3.googleusercontent.com/LsO-0Xx-0ecXrYJ8nCo1n8cxlpktk1m1RAaLNdmVgM4uegM0hBAOKOhWa6Wy39bFSmD6CzgaqOYM1Wh0j2yoGdtl5Q",
+  "site_name": "Castly",
+  "img_logo": "https://lh3.googleusercontent.com/LsO-0Xx-0ecXrYJ8nCo1n8cxlpktk1m1RAaLNdmVgM4uegM0hBAOKOhWa6Wy39bFSmD6CzgaqOYM1Wh0j2yoGdtl5Q",
   "navbar": {
     "products": {
-      "text": "Products"
+      "text": "Products",
+      "show_or_hide": true
     },
     "blog": {
-      "text": "Blog"
+      "text": "Blog",
+      "show_or_hide": true
     }
   },
   "footer": {
-    "copyright": "Netlify © 2019",
+    "copyright": "Castly © 2019",
     "links": {
       "products": {
-        "text": "Products" 
+        "text": "Products",
+        "show_or_hide": true
       }, 
       "blog": {
-        "text": "Blog" 
+        "text": "Blog",
+        "show_or_hide": true
       }
-    },
-    "links2": [{ "text": "Terms" }, { "text": "Privacy" }, { "text": "GDPR" }]
+    }
   }
 }

@@ -5,13 +5,18 @@
                 <i class="toggle fas fa-bars"></i>
             </button>
             <a class="navbar-brand" href="/">
-                <img class="logo" src="{{{global.logo}}}" class="d-inline-block align-top" alt=""/>
+                <img class="logo" src="{{{global.img_logo}}}" class="d-inline-block align-top" alt=""/>
                 <span>{{global.site_name}}</span>
             </a>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="/products">{{global.navbar.products.text}}</a>
-                    <a class="nav-item nav-link active" href="/blog">{{global.navbar.blog.text}}</a>
+                    {{#global.navbar.products.show_or_hide}}
+                        <a class="nav-item nav-link" href="/products">{{global.navbar.products.text}}</a>
+                    {{/global.navbar.products.show_or_hide}}
+
+                    {{#global.navbar.blog.show_or_hide}}
+                        <a class="nav-item nav-link" href="/blog">{{global.navbar.blog.text}}</a>
+                    {{/global.navbar.blog.show_or_hide}}
                 </div>               
             </div>
         </div>

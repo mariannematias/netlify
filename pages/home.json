@@ -14,15 +14,15 @@
     "steps": {
       "step1": {
         "title": "Connect your repository",
-        "img_icon": "https://lh3.googleusercontent.com/5eMZ7pIH5GmmFCAXbqdzWgF_UNIoOqBg1EiESWu1nbtM1MHQd9X6C-vJL2Sd_YFnno6p4OCHaVYno5KjD4_SOCJ8"
+        "img_icon": "https://lh3.googleusercontent.com/kS-xox2pVC7TYsN6Rsg9rZyGb5WB38461UYYHZsF2BGzJ7eCk7R8cOloLv78JN4x7mYvQAQBeMvoPuhjHo_OzDh_jg"
       },
       "step2": {
         "title": "Add your build settings",
-        "img_icon": "https://lh3.googleusercontent.com/2gZ2uQLUNkQD9MOXeFjk_lC6RfpHMIeap9E5cD-lEJYRDXsb0P2xtaQvg56En3znM1iNSziI-VTYe8SQp6DI0000Dw"
+        "img_icon": "https://lh3.googleusercontent.com/eK1FfuCethhIfAiwZ6NpNqSCQJGx5vUR_6NZjO-JXlLTBwA6cwbQmDYWnRkU0fPfsitwu3vCnDZKH78J8KdpFtspeA"
       },
       "step3": {
         "title": "Deploy your website",
-        "img_icon": "https://lh3.googleusercontent.com/JqhsWRHkSK02WtaGoaJcZWSTL6OBXvFw65rE0ANQJCmwsS4S9gvTnLGfilNVwqNcnHBeH90YUWlKWGFzdTJzCzMpN7E"
+        "img_icon": "https://lh3.googleusercontent.com/SOFOBQWt7F0ZHhyup1KcxLX5jt8OFlGAKNhBwfNqx3cQo4lI2f18AYKm53tPYDQIrD4co9YblMIA-Vdt_z6y_3A_7A"
       }
     },
     "subtitle": "*Nope, no gotcha here.",
@@ -68,33 +68,32 @@
       "list3": {
         "img_list": "images/deploy4-a.png",
         "title": "Don’t stop at static",
-        "subtitle": "Netlify’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
+        "subtitle": "Castly’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
       }
     },
     "button": {
       "color": "mediumseagreen",
       "text": "Join now for free"
-    },
-    "link_text": "See plans and pricing"
+    }
   },
   "section4": {
-    "title": "More than 500,000 developers trust Netlify",
-    "img": "images/logos.png",
+    "title": "More than 500,000 developers trust Castly",
+    "img_logos": "https://lh3.googleusercontent.com/AiGIgqOo1w5BMTdTBeR5QnAd_KysKm1yeHGLBsL3e19wlDXu1h-p23zXrMKaYTz-osjNw6zj8eHBhA44JHULXcKY8A",
     "clients": {
       "client1": {
-        "description": "Vuejs.org is now powered by @Netlify with a free open source team plan. Really really impressive and smooth deployment experience.",
+        "description": "Vuejs.org is now powered by @Castly with a free open source team plan. Really really impressive and smooth deployment experience.",
         "img_client": "images/2.png",
         "name": "Evan You",
         "social": "@youyuxi"
       },
       "client2": {
-        "description": "Haven’t been as impressed by a software product as I am with @Netlify in a long time. Huge time saver, works as promised. Neat stuff, folks.",
+        "description": "Haven’t been as impressed by a software product as I am with @Castly in a long time. Huge time saver, works as promised. Neat stuff, folks.",
         "img_client": "images/3.png",
         "name": "Chance Griffin",
         "social": "@cbgriffin"
       },
       "client3": {
-        "description": "I think @Netlify might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
+        "description": "I think @Castly might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
         "img_client": "images/4.png",
         "name": "Emma Barnes #FBPE",
         "social": "@has_many_books"
@@ -102,7 +101,7 @@
     }
   },
   "section5": {
-    "title": "Ready to try Netlify?",
+    "title": "Ready to try Castly?",
     "subtitle": "Deploy a site in 30 seconds.",
     "button": {
       "color": "mediumseagreen",

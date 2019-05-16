@@ -448,6 +448,45 @@ footer .banner-btn {
     font-size: .9rem;
 }
 
+.register form {
+    margin: auto;
+    position: relative;
+}
+.register .button {
+    color: #fff;
+    background: #82B440;
+    border: 0;
+    width: 350px;
+    padding: 18px 50px 17px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.register .button:hover {
+    text-decoration: none;
+}
+.register input[type="submit"] {
+    background-color: #3381f3;
+    border-color: #3381f3;
+}
+.register p input {
+    color: #7d91a5;
+    font-size: 16px;
+    width: 350px;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    padding: 16px;
+    border: 0;
+    background: #272e47;
+    transition: none;
+}
+#edd-user-login {
+    margin-top: 30px;
+}
+
 @media (max-width: 768px) {
     .banner-img {
         height: 565px;
