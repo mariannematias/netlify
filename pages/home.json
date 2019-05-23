@@ -55,17 +55,17 @@
     "title": "There’s a better way to deploy web projects",
     "lists": {
       "list1": {
-        "img_list": "images/deploy4-c.png",
+        "img_list": "https://lh3.googleusercontent.com/-b0iPCX3LLQXI1BAmJkP92SuN7aKIjv5CwSoxgSE103S0YtUcEd72-FQjzhWhX3opjBrW-tTBnFRqT7c92-MPLUcnC8",
         "title": "A single, simplified workflow",
         "subtitle": "Get all the tools you need to deploy and manage your site. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow."
       },
       "list2": {
-        "img_list": "images/deploy4-b.png",
+        "img_list": "https://lh3.googleusercontent.com/3ZSbL1SIvt_NOjYO-BsynFhaA9-8Ni7f71uhHSXoEyGDZg9inIsVnUBBBn6IWnJWD6GEAwxI32a_ar3wfUNmIDVUOQ",
         "title": "Performance from the ground up",
         "subtitle": "Run your site on a purpose-built, multi-cloud infrastructure that’s designed for speed, automated to scale, and intrinsically secure."
       },
       "list3": {
-        "img_list": "images/deploy4-a.png",
+        "img_list": "https://lh3.googleusercontent.com/9AhvF56B2SeDSpuz3DvMLl7BKSIWahgGAeiQbu-dmCSWISTlpDVkAAdZ45v6os9sNnmRKbfuSRkr-066YeCv-vI1oWw",
         "title": "Don’t stop at static",
         "subtitle": "Castly’s tool-agnostic platform helps you go dynamic on your own terms: choose from built-in add ons, integrate a favorite tool, or roll your own."
       }
@@ -81,19 +81,19 @@
     "clients": {
       "client1": {
         "description": "Vuejs.org is now powered by @Castly with a free open source team plan. Really really impressive and smooth deployment experience.",
-        "img_client": "images/2.png",
+        "img_client": "https://lh3.googleusercontent.com/Rca5bZHvWz7eTW2lbPYNn4ujvqyGQ34sMUzKw95vRplDazj6F0Yd-GMQz4CP9PUblGHZsbCwhZAd1WOwh5vYXwIBAg",
         "name": "Evan You",
         "social": "@youyuxi"
       },
       "client2": {
         "description": "Haven’t been as impressed by a software product as I am with @Castly in a long time. Huge time saver, works as promised. Neat stuff, folks.",
-        "img_client": "images/3.png",
+        "img_client": "https://lh3.googleusercontent.com/Rk35_NDjzGayvVjQQEfpR3EZE7EwAb_SoLHFJUp-2E1p7B-C1TEqd_4rAhS5qTWCYY3GbbYjeZbtlBM73aOVEZceFA",
         "name": "Chance Griffin",
         "social": "@cbgriffin"
       },
       "client3": {
         "description": "I think @Castly might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
-        "img_client": "images/4.png",
+        "img_client": "https://lh3.googleusercontent.com/XMnTuaE2rMEmw-s06Fs0HHEhGRAnR3BhnyuqrVOqvrMv8pGEjbNwK1iw843oZe6g9SCrnFs3nyCPg_GdXPBA1a7Y1ko",
         "name": "Emma Barnes #FBPE",
         "social": "@has_many_books"
       }

@@ -13,6 +13,7 @@ const path = require('path')
 gulp.task('css', function(){
     return gulp.src(
             [
+                './public/css/bootstrap.min.css',
                 './public/css/style.css'
             ]
         )
@@ -41,7 +42,10 @@ gulp.task('style', ['css'], function(){})
 gulp.task('vendor', function(){
     return gulp.src(
             [
-                './public/js/jquery.min.js'
+                './public/js/jquery.min.js',
+                './public/js/bootstrap.min.js',
+                './public/js/custom.js',
+                './public/js/subscribers.js'
             ]
         )
         .pipe(gp_concat('vendor.min.js'))

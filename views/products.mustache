@@ -170,13 +170,16 @@
 
       <section class="ready" id="register">
             <div class="container align-center">
-                <h2><strong>{{page.section5.title}}</strong></h2>
-                <p class="footer-sub">{{page.section5.subtitle}}</p>
+                <h2><strong>Ready to try Castly?</strong></h2>
+                <p class="footer-sub">Deploy a site in 30 seconds.</p>
                 <div class="register row">
                     <form id="edd_register_form" class="edd_form" action="" method="post">
                         <fieldset>
                             <p>
-                                <input id="edd-user-login" class="required edd-input" type="text" name="edd_user_login" placeholder="USERNAME">
+                                <input id="edd-user-firstName" class="required edd-input" type="text" name="edd_user_login" placeholder="FIRST NAME">
+                            </p>
+                            <p>
+                                <input id="edd-user-lastName" class="required edd-input" type="text" name="edd_user_login" placeholder="LAST NAME">
                             </p>
                             <p>
                                 <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" placeholder="EMAIL">
@@ -184,7 +187,7 @@
                         </fieldset>
                     </form>
                 </div>
-                <p class="banner-btn align-center"><button class="btn get-started" style="background-color: {{page.section5.button.color}}"><span>{{page.section5.button.text}}</span></button></p>
+                <p class="banner-btn align-center"><button id="btn-register" class="btn btn-md get-started" style="background-color: mediumseagreen"><span>Register</span></button></p>
             </div>
         </section>
 
