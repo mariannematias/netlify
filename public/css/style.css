@@ -172,6 +172,9 @@ header {
     padding: .4em 1em;
     transition: all .15s ease;
 }
+.btn-md {
+    padding: .4em 4em;
+}
 .get-started span {
     font-weight: 600;
 }
@@ -374,7 +377,7 @@ footer {
 }
 .footer-sub {
     color: #0e1e258a;
-    margin-top: 1rem;
+    margin: 1rem 0 2.5rem;
 }
 footer .banner-btn {
     margin-top: 1.3rem;

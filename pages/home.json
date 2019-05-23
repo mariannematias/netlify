@@ -6,8 +6,7 @@
       "color": "mediumseagreen",
       "text": "Join now for free"
     },
-    "hero_bg_color": "#2E545F",
-    "img_bg": "https://lh3.googleusercontent.com/Cx6qc2HMTj6PKfucf9DzaIIurIDG6QNZ873p_IsxiEkjJyuCu8is8JAGzXECr4W6uB3EO1iWQoEkfdapZA44MSoyAw"
+    "img_bg": "https://lh3.googleusercontent.com/j4LVgruRQou1weotibu1K2HNIAr_bCwpdnKDtySmpU2RMsf9S7Inr5aXGWIOCwHtBZuTgz9XZ3nYeESFyFog2KCaBg"
   },
   "section1": {
     "title": "Deploy your site in seconds",
@@ -98,14 +97,6 @@
         "name": "Emma Barnes #FBPE",
         "social": "@has_many_books"
       }
-    }
-  },
-  "section5": {
-    "title": "Ready to try Castly?",
-    "subtitle": "Deploy a site in 30 seconds.",
-    "button": {
-      "color": "mediumseagreen",
-      "text": "Join now for free"
     }
   }
 }

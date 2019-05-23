@@ -5,7 +5,7 @@
   </head>
 
   <body>
-      <div class="head-section">
+      <div class="head-section" id="hero_section">
         {{>header}}
         <section class="banner-section">
             <div class="container">
@@ -14,12 +14,11 @@
                 <p class="banner-btn"><a href="#register" class="register-btn"><button class="btn get-started" style="background-color: {{page.hero_section.button.color}}"><span>{{page.hero_section.button.text}}</span></button></a></p>
             </div>
         </section>
-        <div class="banner-img" style="background:{{page.hero_section.hero_bg_color}}"></div>
-        <div class="image-right-bg"><img src="{{{page.hero_section.img_bg}}}=s1080"/></div>
+        <div class="banner-img" style="background-image:url({{page.hero_section.img_bg}}=s2040)"></div>
       </div>
 
     <main>
-        <section class="deploy">
+        <section class="deploy" id="section1">
             <div class="container">
                 <h2 class="section-title align-center">{{page.section1.title}}<a class="footnote-link" href="#footnote">*</a></h2>
                 <div class="row">
@@ -42,7 +41,7 @@
         </section>
 
         <section>
-            <div class="container">
+            <div class="container" id="section2">
                 <h2 id="#footnote" class="section-title align-center">{{page.section2.title}}</h2>
                 <div class="row static-list">
                     <div class="col-md-3 order-md-1 col-sm-12">
@@ -74,7 +73,7 @@
             </div>
         </section>
 
-        <section class="gradient">
+        <section class="gradient" id="section3">
             <div class="container">
                 <h2 class="section-title align-center">{{page.section3.title}}</h2>
                 <div class="row">
@@ -98,7 +97,7 @@
             </div>
         </section>
 
-        <section class="clients">
+        <section class="clients" id="section4">
             <div class="container">
                 <h3 class="align-center">{{page.section4.title}}</h3>
                 <p class="align-center client-logo"><img src="{{{page.section4.img_logos}}}=s1080"/></p>
@@ -144,13 +143,16 @@
 
         <section class="ready" id="register">
             <div class="container align-center">
-                <h2><strong>{{page.section5.title}}</strong></h2>
-                <p class="footer-sub">{{page.section5.subtitle}}</p>
+                <h2><strong>Ready to try Castly?</strong></h2>
+                <p class="footer-sub">Deploy a site in 30 seconds.</p>
                 <div class="register row">
                     <form id="edd_register_form" class="edd_form" action="" method="post">
                         <fieldset>
                             <p>
-                                <input id="edd-user-login" class="required edd-input" type="text" name="edd_user_login" placeholder="USERNAME">
+                                <input id="edd-user-firstName" class="required edd-input" type="text" name="edd_user_login" placeholder="FIRST NAME">
+                            </p>
+                            <p>
+                                <input id="edd-user-lastName" class="required edd-input" type="text" name="edd_user_login" placeholder="LAST NAME">
                             </p>
                             <p>
                                 <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" placeholder="EMAIL">
@@ -158,7 +160,7 @@
                         </fieldset>
                     </form>
                 </div>
-                <p class="banner-btn align-center"><button class="btn get-started" style="background-color: {{page.section5.button.color}}"><span>{{page.section5.button.text}}</span></button></p>
+                <p class="banner-btn align-center"><button id="btn-register" class="btn btn-md get-started" style="background-color: mediumseagreen"><span>Register</span></button></p>
             </div>
         </section>
 
@@ -166,6 +168,9 @@
 
     {{>footer}}
 
+    <script>
+        window.__PRELOADED__ = {{{preloaded}}}
+    </script>
     <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
     <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
     {{>scripts}}

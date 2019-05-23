@@ -21,6 +21,9 @@ router.get('/', (req, res) => {
 	.then(site => {
 		data['site'] = site
 		data['global'] = site.globalConfig
+		data['preloaded'] = JSON.stringify({
+			global: data.global
+		})
 		res.render('home', data)
 	})
 	.catch(err => {

@@ -1,6 +1,8 @@
 { 
   "site_name": "Castly",
   "img_logo": "https://lh3.googleusercontent.com/LsO-0Xx-0ecXrYJ8nCo1n8cxlpktk1m1RAaLNdmVgM4uegM0hBAOKOhWa6Wy39bFSmD6CzgaqOYM1Wh0j2yoGdtl5Q",
+  "img_favicon": "https://lh3.googleusercontent.com/5SVrpLI9utkuVJbQb48cpD3tar59mgWaWSAM73Ghj8dxFJMD2UOzkhO5ptWDd2uV2eqgSvDCSa-Ad8aOrygXx6nv",
+  "subscriber_confirmation": "Thank you for subscribing! We will contact you shortly.",
   "navbar": {
     "products": {
       "text": "Products",
