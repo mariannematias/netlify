@@ -93,13 +93,5 @@
         "desc": "See what changes will look like in production using Deploy Previews. Get a unique, permanent URL whenever you submit a pull request. It’s posted as a commit status for easy collaboration."
       }
     }
-  },
-  "section5": {
-    "title": "Ready to try Castly?",
-    "subtitle": "Deploy a site in 30 seconds.",
-    "button": {
-      "color": "mediumseagreen",
-      "text": "Join now for free"
-    }
   }
 }

@@ -49,6 +49,9 @@ router.get('/products', (req, res) => {
 	.then(site => {
 		data['site'] = site
 		data['global'] = site.globalConfig
+		data['preloaded'] = JSON.stringify({
+			global: data.global
+		})
 		res.render('products', data)
 	})
 	.catch(err => {

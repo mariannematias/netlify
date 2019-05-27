@@ -13,6 +13,12 @@
       "show_or_hide": true
     }
   },
+  "register": {
+      "title": "Ready to try Castly?",
+      "subtitle": "Deploy a site in 30 seconds.",
+      "button_text": "Register",
+      "button_color": "mediumseagreen"
+  },
   "footer": {
     "copyright": "Castly © 2019",
     "links": {
