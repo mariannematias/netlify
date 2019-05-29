@@ -33,28 +33,32 @@
         "title": "Functions",
         "subtitle": "Deploy AWS Lambda functions without configuring API gateways, coordinating deployments, or setting up an AWS account.",
         "desc": "Your functions are version-controlled, built, and deployed along with the rest of your Castly site, and the Castly API gateway automatically handles service discovery. Plus, your functions benefit from the power of Deploy Previews and rollbacks.",
-        "img_list": "https://lh3.googleusercontent.com/NzxWeeKhla9ULxLWndLyuGM7bclNbDk0pPQcYeWSovtdyKF8bMFf17qM8TB31spZSrmbOUXIMcs2CyA7Xn20ydejh2M"
+        "img_list": "https://lh3.googleusercontent.com/NzxWeeKhla9ULxLWndLyuGM7bclNbDk0pPQcYeWSovtdyKF8bMFf17qM8TB31spZSrmbOUXIMcs2CyA7Xn20ydejh2M",
+        "show_or_hide": true
       },
       "list2": {
         "img-icon": "https://lh3.googleusercontent.com/Qpoj3Pr8LIMq3BsSdlriPhFNaCZSGoNUILt5CPVU7KisUSFNkkTZrW73WJm1XV8CBHsTiwelZu5bqKntKDhkHH6TfSg",
         "title": "Identity",
         "subtitle": "Manage signups, logins, password recovery, and more — all without rolling your own authentication service.",
         "desc": "Register and authenticate visitors to your site so you can gate content, enable CMS functionality, make authenticated calls to outside services, and more. Securely integrate with any service that understands JSON Web Tokens.",
-        "img_list": "https://lh3.googleusercontent.com/-3WxVRYn9j5386Dxzrs5REVg2pi1mvlNaGAtRr-P9JGwHb0nU0xD60VKAhol9YxgNpXMXsEVJDEpAXFKRSBON3KLGw"
+        "img_list": "https://lh3.googleusercontent.com/-3WxVRYn9j5386Dxzrs5REVg2pi1mvlNaGAtRr-P9JGwHb0nU0xD60VKAhol9YxgNpXMXsEVJDEpAXFKRSBON3KLGw",
+        "show_or_hide": true
       },
       "list3": {
         "img-icon": "https://lh3.googleusercontent.com/Qpoj3Pr8LIMq3BsSdlriPhFNaCZSGoNUILt5CPVU7KisUSFNkkTZrW73WJm1XV8CBHsTiwelZu5bqKntKDhkHH6TfSg",
         "title": "Forms",
         "subtitle": "Manage forms and submissions without any server-side code or JavaScript.",
         "desc": "Code an HTML form into any page on your site, add a Castly attribute to the <form> tag, and you’ll receive submissions in your Castly dashboard. HTML files are parsed directly at deploy time, so there’s no need for you to make an API call or include extra JavaScript on your site.",
-        "img_list": "https://lh3.googleusercontent.com/-Pibt2gwWyG1pFkyX1WllHpFRy4uz5Ibt0vvEAJEzYM716d7gL8cF1wB4kkq6lLbiXosf92_3KGfuC27wqkgylwoHg"
+        "img_list": "https://lh3.googleusercontent.com/-Pibt2gwWyG1pFkyX1WllHpFRy4uz5Ibt0vvEAJEzYM716d7gL8cF1wB4kkq6lLbiXosf92_3KGfuC27wqkgylwoHg",
+        "show_or_hide": true
       },
       "list4": {
         "img-icon": "https://lh3.googleusercontent.com/Qpoj3Pr8LIMq3BsSdlriPhFNaCZSGoNUILt5CPVU7KisUSFNkkTZrW73WJm1XV8CBHsTiwelZu5bqKntKDhkHH6TfSg",
         "title": "Large Media",
         "subtitle": "Manage binary files of any size right in your repo, just like code.",
         "desc": "Castly Large Media makes it easy to handle larger assets from the first Git check in through to final delivery. Version control files many gigabytes in size and dynamically resize images on the fly as they are served.",
-        "img_list": "https://lh3.googleusercontent.com/HXCT-X5FkxaVuqjpkWPgM5JkqPQsZspeTy0Zelw7Ug3BFVGmNA-psYAG6asa5nWQ-X0__3ZTbHJnFoyMvDNHxE7Qd-M"
+        "img_list": "https://lh3.googleusercontent.com/HXCT-X5FkxaVuqjpkWPgM5JkqPQsZspeTy0Zelw7Ug3BFVGmNA-psYAG6asa5nWQ-X0__3ZTbHJnFoyMvDNHxE7Qd-M",
+        "show_or_hide": true
       }
     }
   },
@@ -70,27 +74,32 @@
       "list1": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "Push your site live",
-        "desc": "Deploy your site to an ultra-redundant global Application Delivery Network that’s purpose built for serving pages and assets quickly and consistently."
+        "desc": "Deploy your site to an ultra-redundant global Application Delivery Network that’s purpose built for serving pages and assets quickly and consistently.",
+        "show_or_hide": true
       },
       "list2": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "Automate deployment",
-        "desc": "Castly’s built-in continuous deployment automatically runs your build commands and deploys the result whenever you push to your Git repository."
+        "desc": "Castly’s built-in continuous deployment automatically runs your build commands and deploys the result whenever you push to your Git repository.",
+        "show_or_hide": true
       },
       "list3": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "Add a custom domain",
-        "desc": "Buy a custom domain through Castly or add a domain you already own. Manage DNS zones and records using Castly’s DNS hosting."
+        "desc": "Buy a custom domain through Castly or add a domain you already own. Manage DNS zones and records using Castly’s DNS hosting.",
+        "show_or_hide": true
       },
       "list4": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "HTTPS is automatic",
-        "desc": "Your site will automatically be secured with a free TLS certificate from Let’s Encrypt. (No clicks necessary.)"
+        "desc": "Your site will automatically be secured with a free TLS certificate from Let’s Encrypt. (No clicks necessary.)",
+        "show_or_hide": true
       },
       "list5": {
         "img_list": "https://lh3.googleusercontent.com/auTcXeDX0CChPtzGlFtqD0CsMOXije8HAGlDqfBswo4IEDRm0sr_ZVGys2oylD3Hw4YZcGlCCApfAtiyxGPMwDsz",
         "title": "Preview your changes",
-        "desc": "See what changes will look like in production using Deploy Previews. Get a unique, permanent URL whenever you submit a pull request. It’s posted as a commit status for easy collaboration."
+        "desc": "See what changes will look like in production using Deploy Previews. Get a unique, permanent URL whenever you submit a pull request. It’s posted as a commit status for easy collaboration.",
+        "show_or_hide": true
       }
     }
   }

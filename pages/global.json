@@ -30,6 +30,25 @@
         "text": "Blog",
         "show_or_hide": true
       }
+    },
+    "social": {
+      "twitter": {
+        "link": "https://www.twitter.com"
+      },
+      "github": {
+        "link": "https://www.github.com"
+      },
+      "facebook": {
+        "link": "https://www.facebook.com"
+      },
+      "youtube": {
+        "link": "https://www.youtube.com"
+      }
     }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "subtitle": "Subscribe to our newsletter to make sure you don’t miss anything.",
+    "btn_text": "Subscribe"
   }
 }

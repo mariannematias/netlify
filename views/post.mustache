@@ -14,18 +14,19 @@
     <main>
         <section class="post-section">
             <div class="container post-container">
-                <p class="post-meta">• {{post.dateString}}</p>
                 <h1><strong>{{post.title}}</strong></h1>
+                <p class="post-meta">• {{post.dateString}}</p>
                 <div>
+                    <img class="post-img" src="{{{post.image}}}" alt=""/>
                     {{{post.text}}}
                 </div>
 
                 <div class="newsletter">
-                    <h5>Subscribe to the newsletter</h5>
-                    <p>Exploring the JAMstack, static sites, and the future of web development. Subscribe to our newsletter to make sure you don't miss anything.</p>
+                    <h5>{{global.newsletter.title}}</h5>
+                    <p>{{global.newsletter.subtitle}}</p>
                     <form>
-                        <input class="form-control news-input" type="text" placeholder="Email address">
-                        <button class="btn get-started"><span>Subscribe</span></button>
+                        <input id="user-email" class="form-control news-input" type="text" placeholder="Email address">
+                        <button class="btn get-started" id="btn-subscribe"><span>{{global.newsletter.btn_text}}</span></button>
                     </form>
                 </div>
             </div>
@@ -34,6 +35,9 @@
 
     {{>footer}}
 
+    <script>window.__PRELOADED__ = {{{preloaded}}}</script>
+
     {{>scripts}}
+    <script src="/js/newsletter.js"></script>
   </body>
 </html>

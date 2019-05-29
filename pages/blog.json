@@ -6,11 +6,6 @@
   "all-posts": {
     "title": "All posts"
   },
-  "newsletter": {
-    "title": "Newsletter",
-    "subtitle": "Subscribe to our newsletter to make sure you don’t miss anything.",
-    "btn_text": "Subscribe"
-  },
   "latest_posts": {
     "title": "Latest posts"
   },

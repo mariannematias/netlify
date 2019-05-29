@@ -29,7 +29,8 @@
     "button": {
       "color": "mediumseagreen",
       "text": "Join now for free"
-    }
+    },
+    "show_or_hide": true
   },
   "section2": {
     "title": "Go beyond static",
@@ -49,7 +50,8 @@
         "title": "Customize your projects with your own build tools or microservices",
         "subtitle": "Use your favorite tools for search, payments, commenting, or content management."
       }
-    }
+    },
+    "show_or_hide": true
   },
   "section3": {
     "title": "There’s a better way to deploy web projects",
@@ -73,7 +75,8 @@
     "button": {
       "color": "mediumseagreen",
       "text": "Join now for free"
-    }
+    },
+    "show_or_hide": true
   },
   "section4": {
     "title": "More than 500,000 developers trust Castly",
@@ -83,20 +86,24 @@
         "description": "Vuejs.org is now powered by @Castly with a free open source team plan. Really really impressive and smooth deployment experience.",
         "img_client": "https://lh3.googleusercontent.com/Rca5bZHvWz7eTW2lbPYNn4ujvqyGQ34sMUzKw95vRplDazj6F0Yd-GMQz4CP9PUblGHZsbCwhZAd1WOwh5vYXwIBAg",
         "name": "Evan You",
-        "social": "@youyuxi"
+        "social": "@youyuxi",
+        "link": "https://www.twitter.com"
       },
       "client2": {
         "description": "Haven’t been as impressed by a software product as I am with @Castly in a long time. Huge time saver, works as promised. Neat stuff, folks.",
         "img_client": "https://lh3.googleusercontent.com/Rk35_NDjzGayvVjQQEfpR3EZE7EwAb_SoLHFJUp-2E1p7B-C1TEqd_4rAhS5qTWCYY3GbbYjeZbtlBM73aOVEZceFA",
         "name": "Chance Griffin",
-        "social": "@cbgriffin"
+        "social": "@cbgriffin",
+        "link": "https://www.twitter.com"
       },
       "client3": {
         "description": "I think @Castly might just be the very best SaaS app I have ever had the privilege to use. It is just *amazing*.",
         "img_client": "https://lh3.googleusercontent.com/XMnTuaE2rMEmw-s06Fs0HHEhGRAnR3BhnyuqrVOqvrMv8pGEjbNwK1iw843oZe6g9SCrnFs3nyCPg_GdXPBA1a7Y1ko",
         "name": "Emma Barnes #FBPE",
-        "social": "@has_many_books"
+        "social": "@has_many_books",
+        "link": "https://www.twitter.com"
       }
-    }
+    },
+    "show_or_hide": true
   }
 }

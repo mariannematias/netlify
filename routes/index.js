@@ -80,6 +80,9 @@ router.get('/blog', (req, res) => {
 	.then(site => {
 		data['site'] = site
 		data['global'] = site.globalConfig
+		data['preloaded'] = JSON.stringify({
+			global: data.global
+		})
 		res.render('blog', data)
 	})
 	.catch(err => {
@@ -106,6 +109,9 @@ router.get('/post/:slug', (req, res) => {
 	.then(site => {
 		data['site'] = site
 		data['global'] = site.globalConfig
+		data['preloaded'] = JSON.stringify({
+			global: data.global
+		})
 		res.render('post', data)
 	})
 	.catch(err => {

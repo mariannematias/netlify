@@ -19,6 +19,7 @@
       </div>
 
     <main>
+        {{#page.section1.show_or_hide}}
         <section class="deploy" id="section1">
             <div class="container">
                 <h2 class="section-title align-center">{{page.section1.title}}<a class="footnote-link" href="#footnote">*</a></h2>
@@ -40,7 +41,9 @@
                 <p class="banner-btn align-center"><a href="#register" class="register-btn"><button class="btn get-started"  style="background-color: {{page.section1.button.color}}"><span>{{page.section1.button.text}}</span></button></a></p>
             </div>
         </section>
+        {{/page.section1.show_or_hide}}
 
+        {{#page.section2.show_or_hide}}
         <section>
             <div class="container" id="section2">
                 <h2 id="#footnote" class="section-title align-center">{{page.section2.title}}</h2>
@@ -73,7 +76,9 @@
                 </div>
             </div>
         </section>
+        {{/page.section2.show_or_hide}}
 
+        {{#page.section3.show_or_hide}}
         <section class="gradient" id="section3">
             <div class="container">
                 <h2 class="section-title align-center">{{page.section3.title}}</h2>
@@ -97,7 +102,9 @@
                 <p class="banner-btn align-center"><a href="#register" class="register-btn"><button class="btn get-started" style="background-color: {{page.section3.button.color}}"><span>{{page.section3.button.text}}</span></button></a></p>
             </div>
         </section>
+        {{/page.section3.show_or_hide}}
 
+        {{#page.section4.show_or_hide}}
         <section class="clients" id="section4">
             <div class="container">
                 <h3 class="align-center">{{page.section4.title}}</h3>
@@ -110,7 +117,8 @@
                             <p>{{page.section4.clients.client2.description}}</p>
                             <div class="author">
                                 <img src="{{{page.section4.clients.client1.img_client}}}"/>
-                                <a href="#">{{page.section4.clients.client1.name}}
+                                <a href="{{{page.section4.clients.client1.link}}}" target="_blank">
+                                    {{page.section4.clients.client1.name}}
                                     <small><i class="fab fa-twitter"></i>{{page.section4.clients.client1.social}}</small>
                                 </a>
                             </div>
@@ -121,7 +129,8 @@
                             <p>{{page.section4.clients.client2.description}}</p>
                             <div class="author">
                                 <img src="{{{page.section4.clients.client2.img_client}}}"/>
-                                <a href="#">{{page.section4.clients.client2.name}}
+                                <a href="{{{page.section4.clients.client2.link}}}" target="_blank">
+                                    {{page.section4.clients.client2.name}}
                                     <small><i class="fab fa-twitter"></i>{{page.section4.clients.client2.social}}</small>
                                 </a>
                             </div>
@@ -132,7 +141,8 @@
                             <p>{{page.section4.clients.client2.description}}</p>
                             <div class="author">
                                 <img src="{{{page.section4.clients.client3.img_client}}}"/>
-                                <a href="#">{{page.section4.clients.client3.name}}
+                                <a href="{{{page.section4.clients.client3.link}}}" target="_blank">
+                                    {{page.section4.clients.client3.name}}
                                     <small><i class="fab fa-twitter"></i>{{page.section4.clients.client3.social}}</small>
                                 </a>
                             </div>
@@ -141,6 +151,7 @@
                 </div>
             </div>
         </section>
+        {{/page.section4.show_or_hide}}
 
         {{>register}}
 

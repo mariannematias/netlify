@@ -6,7 +6,8 @@
   </head>
 
   <body>
-      <div class="head-section">
+  <div id="vertex-container">
+      <div class="head-section" id="hero_section">
         {{>header}}
         <section class="banner-section">
             <div class="container">
@@ -16,60 +17,64 @@
         </section>
       </div>
 
-    <main>
-        <section class="posts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12">
-                        <h2>{{page.all-posts.title}}</h2>
-                        {{#posts}}
-                        <div class="post-box">
-                            <h4><a href="/post/{{slug}}">{{title}}</a></h4>
-                            <p>{{preview}}</p>
-                            <p>• {{dateString}}</p>
-                        </div>
-                        {{/posts}}
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="newsletter side-section">
-                            <h5>{{page.newsletter.title}}</h5>
-                            <p>{{page.newsletter.subtitle}}</p>
-                            <form>
-                                <input class="form-control news-input" type="text" placeholder="Email address">
-                            </form>
-                            <p class="banner-btn"><button class="btn get-started"><span>{{page.newsletter.btn_text}}</span></button></p>
-                        </div>
-                        <div class="popular side-section">
-                            <h5>{{page.latest_posts.title}}</h5>
-                            <div class="post">
-                                <h4><a href="/post/{{post.slug}}">{{post.title}}</a></h4>
-                                <p>{{post.dateString}}</p>
+        <main>
+            <section class="posts">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <h2 id="all-posts">{{page.all-posts.title}}</h2>
+                            {{#posts}}
+                            <div class="post-box">
+                                <h4><a href="/post/{{slug}}">{{title}}</a></h4>
+                                <p>{{preview}}</p>
+                                <p>• {{dateString}}</p>
                             </div>
-                            <div class="post">
-                                <h4><a href="/post/{{post1.slug}}">{{post1.title}}</a></h4>
-                                <p>{{post1.dateString}}</p>
-                            </div>
-                            <div class="post">
-                                <h4><a href="/post/{{post2.slug}}">{{post2.title}}</a></h4>
-                                <p>{{post2.dateString}}</p>
-                            </div>
+                            {{/posts}}
                         </div>
-                        <div class="contribute side-section">
-                            <h5>{{page.contribute.title}}</h5>
-                            <p>{{page.contribute.desc}}<br>{{page.contribute.desc2}}</p>
-                            <p><a href="#" style="color:{{page.contribute.link.color}}">{{page.contribute.link.text}}</a> →</p>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="newsletter side-section" id="newsletter">
+                                <h5>{{global.newsletter.title}}</h5>
+                                <p>{{global.newsletter.subtitle}}</p>
+                                <form>
+                                    <input id="user-email" class="form-control news-input" type="text" placeholder="Email address">
+                                </form>
+                                <p class="banner-btn"><button class="btn get-started" id="btn-subscribe"><span>{{global.newsletter.btn_text}}</span></button></p>
+                            </div>
+                            <div class="popular side-section">
+                                <h5 id="latest_posts">{{page.latest_posts.title}}</h5>
+                                <div class="post">
+                                    <h4><a href="/post/{{post.slug}}">{{post.title}}</a></h4>
+                                    <p>{{post.dateString}}</p>
+                                </div>
+                                <div class="post">
+                                    <h4><a href="/post/{{post1.slug}}">{{post1.title}}</a></h4>
+                                    <p>{{post1.dateString}}</p>
+                                </div>
+                                <div class="post">
+                                    <h4><a href="/post/{{post2.slug}}">{{post2.title}}</a></h4>
+                                    <p>{{post2.dateString}}</p>
+                                </div>
+                            </div>
+                            <div class="contribute side-section" id="contribute">
+                                <h5>{{page.contribute.title}}</h5>
+                                <p>{{page.contribute.desc}}<br>{{page.contribute.desc2}}</p>
+                                <p><a href="#" style="color:{{page.contribute.link.color}}">{{page.contribute.link.text}}</a> →</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-    </main>
+        </main>
+    </div>
 
     {{>footer}}
+
+    <script>window.__PRELOADED__ = {{{preloaded}}}</script>
 
     <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
     <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
     {{>scripts}}
+    <script src="/js/newsletter.js"></script>
   </body>
 </html>
