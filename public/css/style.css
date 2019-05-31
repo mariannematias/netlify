@@ -62,8 +62,7 @@ header {
     padding-top: 15px;
 }
 .logo {
-    width: 30px;
-    height: 30px;
+    width: 160px;
 }
 .navbar .container {
     padding-bottom: .3rem;
@@ -392,6 +391,10 @@ footer .banner-btn {
 }
 .footer-logo {
     padding-top: 2rem;
+}
+footer .vertex img {
+    width: 160px;
+    padding: 2rem 0 0;
 }
 .footer-nav {
     margin: 1em auto 0;
